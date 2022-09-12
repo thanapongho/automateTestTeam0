@@ -19,5 +19,5 @@ Library  SeleniumLibrary
 7. Click Edit Employee
     Click Element   //*[@id="edit"]
 8. Close Browser
-    sleep   3s
+    sleep   5s
     Close Browser 
