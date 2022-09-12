@@ -19,12 +19,8 @@ Library  SeleniumLibrary
 7. Click Edit Employee
     Click Element   //*[@id="edit"]
 8. Close Browser
-<<<<<<< Updated upstream
     sleep   5s
-=======
-    sleep   3s
     Close Browser 
 9. Close Browser
     sleep   3s
->>>>>>> Stashed changes
     Close Browser 
