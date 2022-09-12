@@ -10,17 +10,14 @@ Library  SeleniumLibrary
     Input Text      id:u_email      63160258@go.buu.ac.th
 4. Input Password
     Input Text      id:u_password   1234
-    sleep   3s
+    sleep   2s
 5. Click to เข้าสู่ระบบ
     Click Element    css:button[type="submit"]
 6. Click Side bar พนังงานในระบบ
-    sleep   3s
+    sleep   2s
     Click Link  //*[@id="sidebarnav"]/li[2]/a
 7. Click Edit Employee
     Click Element   //*[@id="edit"]
 8. Close Browser
-    sleep   5s
-    Close Browser 
-9. Close Browser
-    sleep   3s
+    sleep   4s
     Close Browser 
