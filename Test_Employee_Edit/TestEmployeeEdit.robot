@@ -17,7 +17,8 @@ Library  SeleniumLibrary
     sleep   2s
     Click Link  //*[@id="sidebarnav"]/li[2]/a
 7. Click Edit Employee
-    Click Element   //*[@id="edit"]
-8. Close Browser
     sleep   4s
-    Close Browser 
+    Click Button   css:button[name="edit"]
+8. Close Browser
+    sleep   2s
+    Close Browser
