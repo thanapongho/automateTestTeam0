@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220913 00:56:31.741" rpa="false" schemaversion="3">
+<suite id="s1" name="TestEmployeeEdit" source="C:\Automate Test\Test_PMS\automateTestTeam0\Test_Employee_Edit\TestEmployeeEdit.robot">
+<test id="s1-t1" name="1. Open Project Monitoring System" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://localhost/team0/login</arg>
+<arg>Google Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220913 00:56:32.099" level="INFO">Opening browser 'Google Chrome' to base url 'http://localhost/team0/login'.</msg>
+<status status="PASS" starttime="20220913 00:56:32.098" endtime="20220913 00:56:33.918"/>
+</kw>
+<status status="PASS" starttime="20220913 00:56:32.097" endtime="20220913 00:56:33.919"/>
+</test>
+<test id="s1-t2" name="2. Maximize Browser" line="7">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220913 00:56:33.921" endtime="20220913 00:56:34.058"/>
+</kw>
+<status status="PASS" starttime="20220913 00:56:33.920" endtime="20220913 00:56:34.059"/>
+</test>
+<test id="s1-t3" name="3. Input Username" line="9">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>63160258@go.buu.ac.th</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220913 00:56:34.062" level="INFO">Typing text '63160258@go.buu.ac.th' into text field 'id:u_email'.</msg>
+<status status="PASS" starttime="20220913 00:56:34.061" endtime="20220913 00:56:34.209"/>
+</kw>
+<status status="PASS" starttime="20220913 00:56:34.060" endtime="20220913 00:56:34.210"/>
+</test>
+<test id="s1-t4" name="4. Input Password" line="11">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220913 00:56:34.213" level="INFO">Typing text '1234' into text field 'id:u_password'.</msg>
+<status status="PASS" starttime="20220913 00:56:34.212" endtime="20220913 00:56:34.323"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220913 00:56:36.332" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220913 00:56:34.324" endtime="20220913 00:56:36.332"/>
+</kw>
+<status status="PASS" starttime="20220913 00:56:34.212" endtime="20220913 00:56:36.333"/>
+</test>
+<test id="s1-t5" name="5. Click to เข้าสู่ระบบ" line="14">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:button[type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220913 00:56:36.336" level="INFO">Clicking element 'css:button[type="submit"]'.</msg>
+<status status="PASS" starttime="20220913 00:56:36.336" endtime="20220913 00:56:36.410"/>
+</kw>
+<status status="PASS" starttime="20220913 00:56:36.335" endtime="20220913 00:56:36.411"/>
+</test>
+<test id="s1-t6" name="6. Click Side bar พนังงานในระบบ" line="16">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220913 00:56:38.427" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220913 00:56:36.414" endtime="20220913 00:56:38.427"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="sidebarnav"]/li[2]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220913 00:56:38.428" level="INFO">Clicking link '//*[@id="sidebarnav"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20220913 00:56:38.428" endtime="20220913 00:56:38.757"/>
+</kw>
+<status status="PASS" starttime="20220913 00:56:36.413" endtime="20220913 00:56:38.758"/>
+</test>
+<test id="s1-t7" name="7. Click Edit Employee" line="19">
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220913 00:56:42.776" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220913 00:56:38.761" endtime="20220913 00:56:42.776"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:button[name="edit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220913 00:56:42.778" level="INFO">Clicking button 'css:button[name="edit"]'.</msg>
+<status status="PASS" starttime="20220913 00:56:42.778" endtime="20220913 00:56:42.982"/>
+</kw>
+<status status="PASS" starttime="20220913 00:56:38.760" endtime="20220913 00:56:42.986"/>
+</test>
+<test id="s1-t8" name="8. Close Browser" line="22">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220913 00:56:45.000" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220913 00:56:42.994" endtime="20220913 00:56:45.000"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220913 00:56:45.001" endtime="20220913 00:56:47.298"/>
+</kw>
+<status status="PASS" starttime="20220913 00:56:42.992" endtime="20220913 00:56:47.302"/>
+</test>
+<status status="PASS" starttime="20220913 00:56:31.743" endtime="20220913 00:56:47.326"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="TestEmployeeEdit">TestEmployeeEdit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
