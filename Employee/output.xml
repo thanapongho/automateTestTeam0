@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220927 18:58:05.060" rpa="false" schemaversion="3">
+<suite id="s1" name="TestLoginEmployee" source="C:\Automate Test\Test_PMS\automateTestTeam0\Test_Login_Employee\TestLoginEmployee.robot">
+<test id="s1-t1" name="Login Employee Success" line="32">
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220927 18:58:05.437" level="INFO">Opening browser 'Google Chrome' to base url 'http://localhost/team0/login'.</msg>
+<status status="PASS" starttime="20220927 18:58:05.437" endtime="20220927 18:58:07.909"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220927 18:58:07.909" endtime="20220927 18:58:08.056"/>
+</kw>
+<status status="PASS" starttime="20220927 18:58:05.437" endtime="20220927 18:58:08.056"/>
+</kw>
+<kw name="Input Username">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 18:58:09.067" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 18:58:08.059" endtime="20220927 18:58:09.067"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 18:58:09.067" level="INFO">Typing text 'suchada1512@gmail.com' into text field 'id:u_email'.</msg>
+<status status="PASS" starttime="20220927 18:58:09.067" endtime="20220927 18:58:09.235"/>
+</kw>
+<status status="PASS" starttime="20220927 18:58:08.059" endtime="20220927 18:58:09.239"/>
+</kw>
+<kw name="Input Password">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 18:58:10.240" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 18:58:09.239" endtime="20220927 18:58:10.240"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 18:58:10.240" level="INFO">Typing text '1234' into text field 'id:u_password'.</msg>
+<status status="PASS" starttime="20220927 18:58:10.240" endtime="20220927 18:58:10.379"/>
+</kw>
+<status status="PASS" starttime="20220927 18:58:09.239" endtime="20220927 18:58:10.379"/>
+</kw>
+<kw name="Click to Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 18:58:12.391" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 18:58:10.379" endtime="20220927 18:58:12.391"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="loginBtn"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 18:58:12.391" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
+<status status="PASS" starttime="20220927 18:58:12.391" endtime="20220927 18:58:12.479"/>
+</kw>
+<status status="PASS" starttime="20220927 18:58:10.379" endtime="20220927 18:58:12.479"/>
+</kw>
+<kw name="Close Browser Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 18:58:15.500" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220927 18:58:12.489" endtime="20220927 18:58:15.500"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220927 18:58:15.500" endtime="20220927 18:58:17.699"/>
+</kw>
+<status status="PASS" starttime="20220927 18:58:12.489" endtime="20220927 18:58:17.699"/>
+</kw>
+<status status="PASS" starttime="20220927 18:58:05.433" endtime="20220927 18:58:17.702"/>
+</test>
+<test id="s1-t2" name="Login Employee Fail Without Username" line="38">
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220927 18:58:17.708" level="INFO">Opening browser 'Google Chrome' to base url 'http://localhost/team0/login'.</msg>
+<status status="PASS" starttime="20220927 18:58:17.706" endtime="20220927 18:58:19.889"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220927 18:58:19.889" endtime="20220927 18:58:20.024"/>
+</kw>
+<status status="PASS" starttime="20220927 18:58:17.705" endtime="20220927 18:58:20.024"/>
+</kw>
+<kw name="Blank Username">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 18:58:21.029" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 18:58:20.029" endtime="20220927 18:58:21.029"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_emai</arg>
+<arg>${BlankEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 18:58:21.029" level="INFO">Typing text '' into text field 'id:u_emai'.</msg>
+<msg timestamp="20220927 18:58:21.391" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220927 18:58:21.391" level="FAIL">Element with locator 'id:u_emai' not found.</msg>
+<status status="FAIL" starttime="20220927 18:58:21.029" endtime="20220927 18:58:21.434"/>
+</kw>
+<status status="FAIL" starttime="20220927 18:58:20.029" endtime="20220927 18:58:21.434"/>
+</kw>
+<kw name="Input Password">
+<status status="NOT RUN" starttime="20220927 18:58:21.437" endtime="20220927 18:58:21.437"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20220927 18:58:21.437" endtime="20220927 18:58:21.437"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20220927 18:58:21.437" endtime="20220927 18:58:21.437"/>
+</kw>
+<status status="FAIL" starttime="20220927 18:58:17.704" endtime="20220927 18:58:21.437">Element with locator 'id:u_emai' not found.</status>
+</test>
+<status status="FAIL" starttime="20220927 18:58:05.060" endtime="20220927 18:58:21.439"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="TestLoginEmployee">TestLoginEmployee</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
