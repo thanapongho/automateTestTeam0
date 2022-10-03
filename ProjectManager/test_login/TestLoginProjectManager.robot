@@ -20,10 +20,10 @@ Close Browser Page
     Close Browser 
 
 **Test Cases**
-Login Employee Success
+Login Project Manager Success
     Open file Excel
-    ${Username}=    Read Cell Data      Sheet1  0   1
-    ${Password}=    Read Cell Data      Sheet1  1   1
+    ${Username}=    Read Cell Data      Project Manager  0   1
+    ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
     sleep   1s
     Input Text      id:u_email      ${Username}
@@ -31,10 +31,10 @@ Login Employee Success
     Input Text      id:u_password   ${Password}
     Click to Login
     Close Browser Page
-Login Employee Fail Without Username
+Login Project Manager Fail Without Username
     Open file Excel
-    ${Username}=    Read Cell Data      Sheet1  0   2
-    ${Password}=    Read Cell Data      Sheet1  1   2
+    ${Username}=    Read Cell Data      Project Manager  0   2
+    ${Password}=    Read Cell Data      Project Manager  1   2
     Open Project Monitoring System
     sleep   1s
     Input Text      id:u_email      ${Username}
@@ -42,10 +42,10 @@ Login Employee Fail Without Username
     Input Text      id:u_password   ${Password}
     Click to Login
     Close Browser Page
-Login Employee Fail Without Password
+Login Project Manager Fail Without Password
     Open file Excel
-    ${Username}=    Read Cell Data      Sheet1  0   3
-    ${Password}=    Read Cell Data      Sheet1  1   3
+    ${Username}=    Read Cell Data      Project Manager  0   3
+    ${Password}=    Read Cell Data      Project Manager  1   3
     Open Project Monitoring System
     sleep   1s
     Input Text      id:u_email      ${Username}
@@ -53,10 +53,10 @@ Login Employee Fail Without Password
     Input Text      id:u_password   ${Password}
     Click to Login
     Close Browser Page
-Login Employee Fail Forget Change Languge
+Login Project Manager Fail Forget Change Languge
     Open file Excel
-    ${Username}=    Read Cell Data      Sheet1  0   4
-    ${Password}=    Read Cell Data      Sheet1  1   4
+    ${Username}=    Read Cell Data      Project Manager  0   4
+    ${Password}=    Read Cell Data      Project Manager  1   4
     Open Project Monitoring System
     sleep   1s
     Input Text      id:u_email      ${Username}
@@ -64,10 +64,10 @@ Login Employee Fail Forget Change Languge
     Input Text      id:u_password   ${Password}
     Click to Login
     Close Browser Page
-Login Employee Fail Username Incorrect
+Login Project Manager Fail Username Incorrect
     Open file Excel
-    ${Username}=    Read Cell Data      Sheet1  0   5
-    ${Password}=    Read Cell Data      Sheet1  1   5
+    ${Username}=    Read Cell Data      Project Manager  0   5
+    ${Password}=    Read Cell Data      Project Manager  1   5
     Open Project Monitoring System
     sleep   1s
     Input Text      id:u_email      ${Username}
@@ -75,10 +75,10 @@ Login Employee Fail Username Incorrect
     Input Text      id:u_password   ${Password}
     Click to Login
     Close Browser Page
-Login Employee Fail Password Incorrect
+Login Project Manager Fail Password Incorrect
     Open file Excel
-    ${Username}=    Read Cell Data      Sheet1  0   6
-    ${Password}=    Read Cell Data      Sheet1  1   6
+    ${Username}=    Read Cell Data      Project Manager  0   6
+    ${Password}=    Read Cell Data      Project Manager  1   6
     Open Project Monitoring System
     sleep   1s
     Input Text      id:u_email      ${Username}
@@ -86,10 +86,10 @@ Login Employee Fail Password Incorrect
     Input Text      id:u_password   ${Password}
     Click to Login
     Close Browser Page
-Login Employee Fail Single Quote Without Password
+Login Project Manager Fail Single Quote Without Password
     Open file Excel
-    ${Username}=    Read Cell Data      Sheet1  0   7
-    ${Password}=    Read Cell Data      Sheet1  1   7
+    ${Username}=    Read Cell Data      Project Manager  0   7
+    ${Password}=    Read Cell Data      Project Manager  1   7
     Open Project Monitoring System
     sleep   1s
     Input Text      id:u_email      ${Username}
