@@ -10,7 +10,7 @@ ${URLWRONG}     http://localhost/team
 View Sumarry Project Success
     Open Browser    ${URL}  ${BROWSER}
     Maximize Browser Window
-    sleep   1s 
+    sleep   1s
     Close Browser
 View Sumarry Project Fail
     Open Browser    ${URLWRONG}  ${BROWSER}
