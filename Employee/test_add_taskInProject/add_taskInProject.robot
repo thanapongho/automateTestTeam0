@@ -23,10 +23,10 @@ Click Sidebar Resiponse Project
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
 Serch Project
     sleep   2s
-    Input Text     //*[@id="table_filter"]/label/input     โปรเจคทัวร์เที่ยวไทย
+    Input Text     //*[@id="table_filter"]/label/input     ระบบจัดการเอกสารอัตโนมัติ
 Click Manage Task Project
     sleep   2s
-    Click Element   //*[@id="project9"]/td[6]/a
+    Click Element   //*[@class="btn btn-tertiary btn-sm"]
 Click Add Project Task
     sleep   2s
     Click Element   //*[@id="addBtn"]
