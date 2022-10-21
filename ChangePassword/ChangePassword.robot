@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Library  ExcelRobot
 
 **Variables**
-${URL}  http://localhost/team0/login
+${URL}  http://dekdee2.informatics.buu.ac.th:9080/team0/
 ${BROWSER}  Google Chrome
 
 **Keywords**
@@ -40,7 +40,6 @@ View Profile Employee Success
     Click to Login
     Click Dropdown Icon
     Click Change Password
-
     sleep   2s
     Input Text      id:curPwd       ${Password}
     sleep   1s
