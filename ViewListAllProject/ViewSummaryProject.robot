@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 
 **Variables**
 ${BROWSER}  Google Chrome
-${URL}      http://localhost/team0/
+${URL}      http://dekdee2.informatics.buu.ac.th:9080/team0/
 
 **Test Cases**
 View List all Project Success

@@ -3,8 +3,8 @@ Library  SeleniumLibrary
 
 **Variables**
 ${BROWSER}  Google Chrome
-${URL}      http://localhost/team0/
-${URLWRONG}     http://localhost/team
+${URL}      http://dekdee2.informatics.buu.ac.th:9080/team0/
+${URLWRONG}    http://dekdee2.informatics.buu.ac.th:9080
 
 **Test Cases**
 View Sumarry Project Success

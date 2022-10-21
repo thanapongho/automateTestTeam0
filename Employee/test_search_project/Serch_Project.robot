@@ -18,18 +18,22 @@ Click Menu Login
 Click to Login
     sleep   2s
     Click Element   //*[@id="loginBtn"]
-Click Dropdown Icon
+Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a
-Click Logout
+    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+Serch Project
     sleep   2s
-    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/div/a[3]
+    Input Text     //*[@id="table_filter"]/label/input     ระบบร้านกาแฟ
+Serch Wrong Project
+    sleep   2s
+    Input Text     //*[@id="table_filter"]/label/input     ระบบรานกาแฟ
+
 Close Browser Page
     sleep   3s
     Close Browser 
 
 **Test Cases**
-Logout Employee Success
+Serch Project Success
     Open file Excel
     ${Username}=    Read Cell Data      Employee  0   1
     ${Password}=    Read Cell Data      Employee  1   1
@@ -40,6 +44,20 @@ Logout Employee Success
     sleep   1s
     Input Text      id:u_password   ${Password}
     Click to Login
-    Click Dropdown Icon
-    Click Logout
+    Click Sidebar Resiponse Project
+    Serch Project
+    Close Browser Page
+
+Serch Project Fail
+    Open file Excel
+    ${Username}=    Read Cell Data      Employee  0   1
+    ${Password}=    Read Cell Data      Employee  1   1
+    Open Project Monitoring System
+    sleep   1s
+    Input Text      id:u_email      ${Username}
+    sleep   1s
+    Input Text      id:u_password   ${Password}
+    Click to Login
+    Click Sidebar Resiponse Project
+    Serch Wrong Project
     Close Browser Page
