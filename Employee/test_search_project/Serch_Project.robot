@@ -23,10 +23,10 @@ Click Sidebar Resiponse Project
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
 Serch Project
     sleep   2s
-    Input Text     //*[@id="table_filter"]/label/input     ระบบร้านกาแฟ
+    Input Text     //*[@id="table_filter"]/label/input     ระบบตรวจเช็คสถานะสินค้า
 Serch Wrong Project
     sleep   2s
-    Input Text     //*[@id="table_filter"]/label/input     ระบบรานกาแฟ
+    Input Text     //*[@id="table_filter"]/label/input     ระบบที่ไม่มีชื่ออยู่ในระบบ
 
 Close Browser Page
     sleep   3s
@@ -53,6 +53,7 @@ Serch Project Fail
     ${Username}=    Read Cell Data      Employee  0   1
     ${Password}=    Read Cell Data      Employee  1   1
     Open Project Monitoring System
+    Click Menu Login
     sleep   1s
     Input Text      id:u_email      ${Username}
     sleep   1s

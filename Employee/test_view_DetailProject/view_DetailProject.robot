@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Library  ExcelRobot
 
 **Variables**
-${URL}  http://localhost/team0/login
+${URL}  http://dekdee2.informatics.buu.ac.th:9080/team0/
 ${BROWSER}  Google Chrome
 
 **Keywords**
@@ -12,6 +12,9 @@ Open file Excel
 Open Project Monitoring System
     open Browser  ${URL}  ${BROWSER}  
     Maximize Browser Window
+Click Menu Login
+    sleep   2s
+    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a
 Click to Login
     sleep   2s
     Click Element   //*[@id="loginBtn"]
@@ -32,6 +35,7 @@ View Project Success
     ${Username}=    Read Cell Data      Employee  0   1
     ${Password}=    Read Cell Data      Employee  1   1
     Open Project Monitoring System
+    Click Menu Login
     sleep   1s
     Input Text      id:u_email      ${Username}
     sleep   1s

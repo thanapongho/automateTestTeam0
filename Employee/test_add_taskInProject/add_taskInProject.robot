@@ -47,6 +47,12 @@ Click choose date Project Task
 Click Add document Project Task
     sleep   2s
     Choose File     id:uploadBtn   ${CURDIR}\\environmentTeam0.jpg
+Click Save Button
+    sleep   2s
+    Click Element   //*[@id="mainModalFooter"]/button[1]
+Click Confirm Button
+    sleep   2s
+    Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
 Close Browser Page
     sleep   5s
     Close Browser 
@@ -72,4 +78,6 @@ Add Task in Project Success
     Fill out detail Project Task
     Click choose date Project Task
     Click Add document Project Task
+    Click Save Button
+    Click Confirm Button
     Close Browser Page
