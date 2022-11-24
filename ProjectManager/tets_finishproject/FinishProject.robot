@@ -23,10 +23,10 @@ Click Sidebar Icon
     Click Element   //*[@id="sidebarnav"]/li[2]/a
 Click file
     sleep   2s
-    Click Element   xpath = /html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/a
+    Click Element   //*[@class="far fa-folder-open"]
 Click finish Project
     sleep   2s
-    Click Element   xpath = /html/body/div[2]/div/div/div[2]/div/div/div/div/button[2]
+    Click Element   //*[@class="btn btn-info me-2"]
 Click confirm
     sleep   2s
     Click Element   //*[@class="swal2-confirm swal2-styled"]
