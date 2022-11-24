@@ -47,6 +47,9 @@ Click Cancle Project
 Click Accept Cancle Project
     sleep   2s 
     Click Element   xpath=/html/body/div[5]/div/div[3]/button[1]
+Click Cancle Accept Project
+    sleep   2s 
+    Click Element   xpath=/html/body/div[5]/div/div[3]/button[2]
 Close Browser Page
     sleep   3s
     Close Browser 
@@ -71,7 +74,7 @@ Close Browser Page
 #     sleep   2s
 #     Close Browser
     
-Cancle Project
+Cancle Project Success
     Open file Excel
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
@@ -96,5 +99,30 @@ Cancle Project
     sleep   2s
     Close Browser Page
     sleep   2s
+
+Cancle Project Wrong
+    Open file Excel
+    ${Username}=    Read Cell Data      Project Manager  0   1
+    ${Password}=    Read Cell Data      Project Manager  1   1
+    Open file Excel
+    ${Username}=    Read Cell Data      Project Manager  0   1
+    ${Password}=    Read Cell Data      Project Manager  1   1
+    Open Project Monitoring System
+    Click Menu Login
+    sleep   2s
+    Input Text      id:u_email      ${Username}
+    sleep   2s
+    Input Text      id:u_password   ${Password}
+    Click to Login
+    sleep   2s
+    Click Sidebar Resiponse Project
+    sleep   2s
+    Click Manage Activities
+    sleep   2s
+    Click Cancle Project
+    sleep   2s
+    Click Cancle Accept Project
+    sleep   2s
+    Close Browser Page
+    sleep   2s
     
-   
