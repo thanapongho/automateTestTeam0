@@ -1,0 +1,1887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20221124 16:34:38.177" rpa="false" schemaversion="3">
+<suite id="s1" name="Editproject" source="C:\Automate Test\Test_PMS\automateTestTeam0\ProjectManager\test_editproject\Editproject.robot">
+<test id="s1-t1" name="Edit Name Project Success" line="65">
+<kw name="Open file Excel">
+<kw name="Open Excel" library="ExcelRobot">
+<arg>C:\\Automate Test\\Test_PMS\\automateTestTeam0\\ProjectManager\\test_editproject\\test_data.xlsx</arg>
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<msg timestamp="20221124 16:34:38.737" level="INFO">Opening file at C:\Automate Test\Test_PMS\automateTestTeam0\ProjectManager\test_editproject\test_data.xlsx</msg>
+<status status="PASS" starttime="20221124 16:34:38.737" endtime="20221124 16:34:38.741"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:38.737" endtime="20221124 16:34:38.741"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Username}</var>
+<arg>Project Manager</arg>
+<arg>0</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:34:38.741" level="INFO">${Username} = sunisa.su@gmail.com	</msg>
+<status status="PASS" starttime="20221124 16:34:38.741" endtime="20221124 16:34:38.742"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Password}</var>
+<arg>Project Manager</arg>
+<arg>1</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:34:38.742" level="INFO">${Password} = sunisa.s</msg>
+<status status="PASS" starttime="20221124 16:34:38.742" endtime="20221124 16:34:38.742"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221124 16:34:38.743" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20221124 16:34:38.743" endtime="20221124 16:34:41.727"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221124 16:34:41.729" endtime="20221124 16:34:41.886"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:38.742" endtime="20221124 16:34:41.886"/>
+</kw>
+<kw name="Click Menu Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:34:43.890" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:34:41.887" endtime="20221124 16:34:43.890"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:34:43.891" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a'.</msg>
+<status status="PASS" starttime="20221124 16:34:43.890" endtime="20221124 16:34:44.265"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:41.886" endtime="20221124 16:34:44.265"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:34:45.271" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221124 16:34:44.266" endtime="20221124 16:34:45.271"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221124 16:34:45.271" level="INFO">Typing text 'sunisa.su@gmail.com	' into text field 'id:u_email'.</msg>
+<status status="PASS" starttime="20221124 16:34:45.271" endtime="20221124 16:34:45.416"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:34:46.423" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221124 16:34:45.417" endtime="20221124 16:34:46.423"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221124 16:34:46.424" level="INFO">Typing text 'sunisa.s' into text field 'id:u_password'.</msg>
+<status status="PASS" starttime="20221124 16:34:46.424" endtime="20221124 16:34:46.510"/>
+</kw>
+<kw name="Click to Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:34:48.525" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:34:46.512" endtime="20221124 16:34:48.525"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="loginBtn"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:34:48.526" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
+<status status="PASS" starttime="20221124 16:34:48.525" endtime="20221124 16:34:48.573"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:46.511" endtime="20221124 16:34:48.573"/>
+</kw>
+<kw name="Click Sidebar Icon">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:34:50.577" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:34:48.575" endtime="20221124 16:34:50.577"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="sidebarnav"]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:34:50.578" level="INFO">Clicking element '//*[@id="sidebarnav"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20221124 16:34:50.577" endtime="20221124 16:34:50.906"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:48.574" endtime="20221124 16:34:50.907"/>
+</kw>
+<kw name="Click Edit Project">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:34:52.912" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:34:50.908" endtime="20221124 16:34:52.912"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="edit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:34:52.912" level="INFO">Clicking element '//*[@id="edit"]'.</msg>
+<status status="PASS" starttime="20221124 16:34:52.912" endtime="20221124 16:34:52.958"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:50.907" endtime="20221124 16:34:52.958"/>
+</kw>
+<kw name="Click Edit Name Project">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:34:54.962" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:34:52.958" endtime="20221124 16:34:54.962"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="p_name"]</arg>
+<arg>เติมเงินเกมสำหรับร้านเกม</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221124 16:34:54.968" level="INFO">Typing text 'เติมเงินเกมสำหรับร้านเกม' into text field '//*[@id="p_name"]'.</msg>
+<status status="PASS" starttime="20221124 16:34:54.962" endtime="20221124 16:34:55.113"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:52.958" endtime="20221124 16:34:55.114"/>
+</kw>
+<kw name="Click Confirm">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:34:57.120" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:34:55.114" endtime="20221124 16:34:57.120"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="mainModalFooter"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:34:57.126" level="INFO">Clicking element '//*[@id="mainModalFooter"]/button[1]'.</msg>
+<status status="PASS" starttime="20221124 16:34:57.126" endtime="20221124 16:34:57.184"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:55.114" endtime="20221124 16:34:57.185"/>
+</kw>
+<kw name="Click Confirm Again">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:34:59.199" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:34:57.185" endtime="20221124 16:34:59.200"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="swal2-confirm swal2-styled"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:34:59.202" level="INFO">Clicking element '//*[@class="swal2-confirm swal2-styled"]'.</msg>
+<status status="PASS" starttime="20221124 16:34:59.201" endtime="20221124 16:34:59.274"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:57.185" endtime="20221124 16:34:59.274"/>
+</kw>
+<kw name="Close Browser Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:02.289" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221124 16:34:59.275" endtime="20221124 16:35:02.289"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221124 16:35:02.291" endtime="20221124 16:35:04.506"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:59.275" endtime="20221124 16:35:04.506"/>
+</kw>
+<status status="PASS" starttime="20221124 16:34:38.737" endtime="20221124 16:35:04.507"/>
+</test>
+<test id="s1-t2" name="Edit Name Project Failed" line="82">
+<kw name="Open file Excel">
+<kw name="Open Excel" library="ExcelRobot">
+<arg>C:\\Automate Test\\Test_PMS\\automateTestTeam0\\ProjectManager\\test_editproject\\test_data.xlsx</arg>
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<msg timestamp="20221124 16:35:04.509" level="INFO">Opening file at C:\Automate Test\Test_PMS\automateTestTeam0\ProjectManager\test_editproject\test_data.xlsx</msg>
+<status status="PASS" starttime="20221124 16:35:04.509" endtime="20221124 16:35:04.511"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:04.509" endtime="20221124 16:35:04.511"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Username}</var>
+<arg>Project Manager</arg>
+<arg>0</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:04.512" level="INFO">${Username} = sunisa.su@gmail.com	</msg>
+<status status="PASS" starttime="20221124 16:35:04.512" endtime="20221124 16:35:04.512"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Password}</var>
+<arg>Project Manager</arg>
+<arg>1</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:04.513" level="INFO">${Password} = sunisa.s</msg>
+<status status="PASS" starttime="20221124 16:35:04.512" endtime="20221124 16:35:04.513"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221124 16:35:04.513" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20221124 16:35:04.513" endtime="20221124 16:35:06.851"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221124 16:35:06.852" endtime="20221124 16:35:07.009"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:04.513" endtime="20221124 16:35:07.009"/>
+</kw>
+<kw name="Click Menu Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:09.013" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:07.010" endtime="20221124 16:35:09.013"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:09.014" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a'.</msg>
+<status status="PASS" starttime="20221124 16:35:09.013" endtime="20221124 16:35:09.415"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:07.010" endtime="20221124 16:35:09.415"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:10.424" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221124 16:35:09.416" endtime="20221124 16:35:10.424"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:10.425" level="INFO">Typing text 'sunisa.su@gmail.com	' into text field 'id:u_email'.</msg>
+<status status="PASS" starttime="20221124 16:35:10.425" endtime="20221124 16:35:10.563"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:11.575" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221124 16:35:10.564" endtime="20221124 16:35:11.575"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:11.577" level="INFO">Typing text 'sunisa.s' into text field 'id:u_password'.</msg>
+<status status="PASS" starttime="20221124 16:35:11.576" endtime="20221124 16:35:11.653"/>
+</kw>
+<kw name="Click to Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:13.663" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:11.654" endtime="20221124 16:35:13.663"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="loginBtn"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:13.663" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
+<status status="PASS" starttime="20221124 16:35:13.663" endtime="20221124 16:35:13.729"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:11.654" endtime="20221124 16:35:13.729"/>
+</kw>
+<kw name="Click Sidebar Icon">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:15.740" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:13.730" endtime="20221124 16:35:15.740"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="sidebarnav"]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:15.740" level="INFO">Clicking element '//*[@id="sidebarnav"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20221124 16:35:15.740" endtime="20221124 16:35:16.104"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:13.729" endtime="20221124 16:35:16.104"/>
+</kw>
+<kw name="Click Edit Project">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:18.108" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:16.105" endtime="20221124 16:35:18.109"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="edit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:18.109" level="INFO">Clicking element '//*[@id="edit"]'.</msg>
+<msg timestamp="20221124 16:35:18.112" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:18.116" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<status status="FAIL" starttime="20221124 16:35:18.109" endtime="20221124 16:35:18.214"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:16.105" endtime="20221124 16:35:18.215"/>
+</kw>
+<kw name="Click Edit Name Project">
+<status status="NOT RUN" starttime="20221124 16:35:18.216" endtime="20221124 16:35:18.216"/>
+</kw>
+<kw name="Click Confirm">
+<status status="NOT RUN" starttime="20221124 16:35:18.216" endtime="20221124 16:35:18.216"/>
+</kw>
+<kw name="Click NotConfirm Again">
+<status status="NOT RUN" starttime="20221124 16:35:18.216" endtime="20221124 16:35:18.216"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20221124 16:35:18.216" endtime="20221124 16:35:18.216"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:04.508" endtime="20221124 16:35:18.217">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</status>
+</test>
+<test id="s1-t3" name="Edit Detail Project Success" line="99">
+<kw name="Open file Excel">
+<kw name="Open Excel" library="ExcelRobot">
+<arg>C:\\Automate Test\\Test_PMS\\automateTestTeam0\\ProjectManager\\test_editproject\\test_data.xlsx</arg>
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<msg timestamp="20221124 16:35:18.230" level="INFO">Opening file at C:\Automate Test\Test_PMS\automateTestTeam0\ProjectManager\test_editproject\test_data.xlsx</msg>
+<status status="PASS" starttime="20221124 16:35:18.229" endtime="20221124 16:35:18.236"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:18.228" endtime="20221124 16:35:18.236"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Username}</var>
+<arg>Project Manager</arg>
+<arg>0</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:18.237" level="INFO">${Username} = sunisa.su@gmail.com	</msg>
+<status status="PASS" starttime="20221124 16:35:18.237" endtime="20221124 16:35:18.237"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Password}</var>
+<arg>Project Manager</arg>
+<arg>1</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:18.239" level="INFO">${Password} = sunisa.s</msg>
+<status status="PASS" starttime="20221124 16:35:18.238" endtime="20221124 16:35:18.239"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221124 16:35:18.240" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20221124 16:35:18.240" endtime="20221124 16:35:20.780"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221124 16:35:20.780" endtime="20221124 16:35:20.955"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:18.239" endtime="20221124 16:35:20.955"/>
+</kw>
+<kw name="Click Menu Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:22.960" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:20.959" endtime="20221124 16:35:22.960"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:22.960" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a'.</msg>
+<msg timestamp="20221124 16:35:22.963" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:22.966" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<status status="FAIL" starttime="20221124 16:35:22.960" endtime="20221124 16:35:22.967"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:20.956" endtime="20221124 16:35:22.967"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:22.968" endtime="20221124 16:35:22.968"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:22.968" endtime="20221124 16:35:22.968"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:22.969" endtime="20221124 16:35:22.969"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:22.969" endtime="20221124 16:35:22.969"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20221124 16:35:22.970" endtime="20221124 16:35:22.970"/>
+</kw>
+<kw name="Click Sidebar Icon">
+<status status="NOT RUN" starttime="20221124 16:35:22.970" endtime="20221124 16:35:22.970"/>
+</kw>
+<kw name="Click Edit Project">
+<status status="NOT RUN" starttime="20221124 16:35:22.970" endtime="20221124 16:35:22.970"/>
+</kw>
+<kw name="Click Edit Detail Project">
+<status status="NOT RUN" starttime="20221124 16:35:22.971" endtime="20221124 16:35:22.971"/>
+</kw>
+<kw name="Click Confirm">
+<status status="NOT RUN" starttime="20221124 16:35:22.971" endtime="20221124 16:35:22.971"/>
+</kw>
+<kw name="Click Confirm Again">
+<status status="NOT RUN" starttime="20221124 16:35:22.972" endtime="20221124 16:35:22.972"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20221124 16:35:22.972" endtime="20221124 16:35:22.972"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:18.224" endtime="20221124 16:35:22.973">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</status>
+</test>
+<test id="s1-t4" name="Edit Customer Name Success" line="116">
+<kw name="Open file Excel">
+<kw name="Open Excel" library="ExcelRobot">
+<arg>C:\\Automate Test\\Test_PMS\\automateTestTeam0\\ProjectManager\\test_editproject\\test_data.xlsx</arg>
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<msg timestamp="20221124 16:35:22.982" level="INFO">Opening file at C:\Automate Test\Test_PMS\automateTestTeam0\ProjectManager\test_editproject\test_data.xlsx</msg>
+<status status="PASS" starttime="20221124 16:35:22.982" endtime="20221124 16:35:22.989"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:22.980" endtime="20221124 16:35:22.989"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Username}</var>
+<arg>Project Manager</arg>
+<arg>0</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:22.991" level="INFO">${Username} = sunisa.su@gmail.com	</msg>
+<status status="PASS" starttime="20221124 16:35:22.990" endtime="20221124 16:35:22.991"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Password}</var>
+<arg>Project Manager</arg>
+<arg>1</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:22.992" level="INFO">${Password} = sunisa.s</msg>
+<status status="PASS" starttime="20221124 16:35:22.991" endtime="20221124 16:35:22.992"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221124 16:35:22.993" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20221124 16:35:22.993" endtime="20221124 16:35:25.737"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221124 16:35:25.737" endtime="20221124 16:35:25.969"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:22.992" endtime="20221124 16:35:25.969"/>
+</kw>
+<kw name="Click Menu Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:27.980" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:25.970" endtime="20221124 16:35:27.980"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:27.980" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a'.</msg>
+<msg timestamp="20221124 16:35:27.983" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:27.986" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<status status="FAIL" starttime="20221124 16:35:27.980" endtime="20221124 16:35:27.987"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:25.970" endtime="20221124 16:35:27.987"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:27.987" endtime="20221124 16:35:27.987"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:27.988" endtime="20221124 16:35:27.988"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:27.988" endtime="20221124 16:35:27.988"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:27.989" endtime="20221124 16:35:27.989"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20221124 16:35:27.989" endtime="20221124 16:35:27.989"/>
+</kw>
+<kw name="Click Sidebar Icon">
+<status status="NOT RUN" starttime="20221124 16:35:27.990" endtime="20221124 16:35:27.990"/>
+</kw>
+<kw name="Click Edit Project">
+<status status="NOT RUN" starttime="20221124 16:35:27.990" endtime="20221124 16:35:27.990"/>
+</kw>
+<kw name="Click Edit Customer Name">
+<status status="NOT RUN" starttime="20221124 16:35:27.990" endtime="20221124 16:35:27.991"/>
+</kw>
+<kw name="Click Confirm">
+<status status="NOT RUN" starttime="20221124 16:35:27.991" endtime="20221124 16:35:27.991"/>
+</kw>
+<kw name="Click Confirm Again">
+<status status="NOT RUN" starttime="20221124 16:35:27.991" endtime="20221124 16:35:27.991"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20221124 16:35:27.992" endtime="20221124 16:35:27.992"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:22.976" endtime="20221124 16:35:27.992">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</status>
+</test>
+<test id="s1-t5" name="Edit Date Project Success" line="133">
+<kw name="Open file Excel">
+<kw name="Open Excel" library="ExcelRobot">
+<arg>C:\\Automate Test\\Test_PMS\\automateTestTeam0\\ProjectManager\\test_editproject\\test_data.xlsx</arg>
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<msg timestamp="20221124 16:35:28.005" level="INFO">Opening file at C:\Automate Test\Test_PMS\automateTestTeam0\ProjectManager\test_editproject\test_data.xlsx</msg>
+<status status="PASS" starttime="20221124 16:35:28.005" endtime="20221124 16:35:28.010"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:28.004" endtime="20221124 16:35:28.010"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Username}</var>
+<arg>Project Manager</arg>
+<arg>0</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:28.012" level="INFO">${Username} = sunisa.su@gmail.com	</msg>
+<status status="PASS" starttime="20221124 16:35:28.011" endtime="20221124 16:35:28.012"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Password}</var>
+<arg>Project Manager</arg>
+<arg>1</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:28.012" level="INFO">${Password} = sunisa.s</msg>
+<status status="PASS" starttime="20221124 16:35:28.012" endtime="20221124 16:35:28.013"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221124 16:35:28.014" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20221124 16:35:28.013" endtime="20221124 16:35:30.441"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221124 16:35:30.442" endtime="20221124 16:35:30.703"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:28.013" endtime="20221124 16:35:30.703"/>
+</kw>
+<kw name="Click Menu Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:32.715" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:30.704" endtime="20221124 16:35:32.716"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:32.717" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a'.</msg>
+<msg timestamp="20221124 16:35:32.719" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:32.729" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<status status="FAIL" starttime="20221124 16:35:32.716" endtime="20221124 16:35:32.731"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:30.704" endtime="20221124 16:35:32.732"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:32.733" endtime="20221124 16:35:32.733"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:32.734" endtime="20221124 16:35:32.734"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:32.735" endtime="20221124 16:35:32.735"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:32.735" endtime="20221124 16:35:32.735"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20221124 16:35:32.736" endtime="20221124 16:35:32.736"/>
+</kw>
+<kw name="Click Sidebar Icon">
+<status status="NOT RUN" starttime="20221124 16:35:32.736" endtime="20221124 16:35:32.737"/>
+</kw>
+<kw name="Click Edit Project">
+<status status="NOT RUN" starttime="20221124 16:35:32.737" endtime="20221124 16:35:32.737"/>
+</kw>
+<kw name="Click Edit Date Project">
+<status status="NOT RUN" starttime="20221124 16:35:32.737" endtime="20221124 16:35:32.737"/>
+</kw>
+<kw name="Click Confirm">
+<status status="NOT RUN" starttime="20221124 16:35:32.739" endtime="20221124 16:35:32.739"/>
+</kw>
+<kw name="Click Confirm Again">
+<status status="NOT RUN" starttime="20221124 16:35:32.739" endtime="20221124 16:35:32.740"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20221124 16:35:32.740" endtime="20221124 16:35:32.740"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:28.002" endtime="20221124 16:35:32.741">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</status>
+</test>
+<test id="s1-t6" name="Edit TelNo Customer Success" line="150">
+<kw name="Open file Excel">
+<kw name="Open Excel" library="ExcelRobot">
+<arg>C:\\Automate Test\\Test_PMS\\automateTestTeam0\\ProjectManager\\test_editproject\\test_data.xlsx</arg>
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<msg timestamp="20221124 16:35:32.745" level="INFO">Opening file at C:\Automate Test\Test_PMS\automateTestTeam0\ProjectManager\test_editproject\test_data.xlsx</msg>
+<status status="PASS" starttime="20221124 16:35:32.745" endtime="20221124 16:35:32.748"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:32.745" endtime="20221124 16:35:32.748"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Username}</var>
+<arg>Project Manager</arg>
+<arg>0</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:32.749" level="INFO">${Username} = sunisa.su@gmail.com	</msg>
+<status status="PASS" starttime="20221124 16:35:32.748" endtime="20221124 16:35:32.749"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Password}</var>
+<arg>Project Manager</arg>
+<arg>1</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:32.749" level="INFO">${Password} = sunisa.s</msg>
+<status status="PASS" starttime="20221124 16:35:32.749" endtime="20221124 16:35:32.749"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221124 16:35:32.751" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20221124 16:35:32.750" endtime="20221124 16:35:35.722"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221124 16:35:35.722" endtime="20221124 16:35:35.992"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:32.750" endtime="20221124 16:35:35.993"/>
+</kw>
+<kw name="Click Menu Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:38.011" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:35.997" endtime="20221124 16:35:38.011"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:38.011" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a'.</msg>
+<msg timestamp="20221124 16:35:38.014" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:38.017" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<status status="FAIL" starttime="20221124 16:35:38.011" endtime="20221124 16:35:38.018"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:35.996" endtime="20221124 16:35:38.019"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:38.019" endtime="20221124 16:35:38.019"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:38.020" endtime="20221124 16:35:38.020"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:38.020" endtime="20221124 16:35:38.020"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:38.020" endtime="20221124 16:35:38.020"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20221124 16:35:38.021" endtime="20221124 16:35:38.021"/>
+</kw>
+<kw name="Click Sidebar Icon">
+<status status="NOT RUN" starttime="20221124 16:35:38.021" endtime="20221124 16:35:38.021"/>
+</kw>
+<kw name="Click Edit Project">
+<status status="NOT RUN" starttime="20221124 16:35:38.022" endtime="20221124 16:35:38.022"/>
+</kw>
+<kw name="Click Edit Telno">
+<status status="NOT RUN" starttime="20221124 16:35:38.022" endtime="20221124 16:35:38.022"/>
+</kw>
+<kw name="Click Confirm">
+<status status="NOT RUN" starttime="20221124 16:35:38.026" endtime="20221124 16:35:38.027"/>
+</kw>
+<kw name="Click Confirm Again">
+<status status="NOT RUN" starttime="20221124 16:35:38.030" endtime="20221124 16:35:38.030"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20221124 16:35:38.031" endtime="20221124 16:35:38.031"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:32.744" endtime="20221124 16:35:38.033">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</status>
+</test>
+<test id="s1-t7" name="Edit Line Customer Success" line="167">
+<kw name="Open file Excel">
+<kw name="Open Excel" library="ExcelRobot">
+<arg>C:\\Automate Test\\Test_PMS\\automateTestTeam0\\ProjectManager\\test_editproject\\test_data.xlsx</arg>
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<msg timestamp="20221124 16:35:38.041" level="INFO">Opening file at C:\Automate Test\Test_PMS\automateTestTeam0\ProjectManager\test_editproject\test_data.xlsx</msg>
+<status status="PASS" starttime="20221124 16:35:38.041" endtime="20221124 16:35:38.045"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:38.040" endtime="20221124 16:35:38.045"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Username}</var>
+<arg>Project Manager</arg>
+<arg>0</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:38.046" level="INFO">${Username} = sunisa.su@gmail.com	</msg>
+<status status="PASS" starttime="20221124 16:35:38.045" endtime="20221124 16:35:38.046"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Password}</var>
+<arg>Project Manager</arg>
+<arg>1</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:38.046" level="INFO">${Password} = sunisa.s</msg>
+<status status="PASS" starttime="20221124 16:35:38.046" endtime="20221124 16:35:38.046"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221124 16:35:38.047" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20221124 16:35:38.047" endtime="20221124 16:35:40.925"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221124 16:35:40.926" endtime="20221124 16:35:41.087"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:38.047" endtime="20221124 16:35:41.089"/>
+</kw>
+<kw name="Click Menu Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:43.106" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:41.094" endtime="20221124 16:35:43.106"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:43.106" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a'.</msg>
+<msg timestamp="20221124 16:35:43.109" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:43.117" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<status status="FAIL" starttime="20221124 16:35:43.106" endtime="20221124 16:35:43.120"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:41.091" endtime="20221124 16:35:43.122"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:43.123" endtime="20221124 16:35:43.123"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:43.124" endtime="20221124 16:35:43.124"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:43.125" endtime="20221124 16:35:43.125"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:43.126" endtime="20221124 16:35:43.126"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20221124 16:35:43.127" endtime="20221124 16:35:43.127"/>
+</kw>
+<kw name="Click Sidebar Icon">
+<status status="NOT RUN" starttime="20221124 16:35:43.127" endtime="20221124 16:35:43.127"/>
+</kw>
+<kw name="Click Edit Project">
+<status status="NOT RUN" starttime="20221124 16:35:43.128" endtime="20221124 16:35:43.128"/>
+</kw>
+<kw name="Click Edit Line">
+<status status="NOT RUN" starttime="20221124 16:35:43.128" endtime="20221124 16:35:43.129"/>
+</kw>
+<kw name="Click Confirm">
+<status status="NOT RUN" starttime="20221124 16:35:43.129" endtime="20221124 16:35:43.129"/>
+</kw>
+<kw name="Click Confirm Again">
+<status status="NOT RUN" starttime="20221124 16:35:43.130" endtime="20221124 16:35:43.130"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20221124 16:35:43.131" endtime="20221124 16:35:43.131"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:38.040" endtime="20221124 16:35:43.131">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</status>
+</test>
+<test id="s1-t8" name="Edit Email Customer Success" line="184">
+<kw name="Open file Excel">
+<kw name="Open Excel" library="ExcelRobot">
+<arg>C:\\Automate Test\\Test_PMS\\automateTestTeam0\\ProjectManager\\test_editproject\\test_data.xlsx</arg>
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<msg timestamp="20221124 16:35:43.136" level="INFO">Opening file at C:\Automate Test\Test_PMS\automateTestTeam0\ProjectManager\test_editproject\test_data.xlsx</msg>
+<status status="PASS" starttime="20221124 16:35:43.136" endtime="20221124 16:35:43.139"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:43.135" endtime="20221124 16:35:43.139"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Username}</var>
+<arg>Project Manager</arg>
+<arg>0</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:43.139" level="INFO">${Username} = sunisa.su@gmail.com	</msg>
+<status status="PASS" starttime="20221124 16:35:43.139" endtime="20221124 16:35:43.139"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Password}</var>
+<arg>Project Manager</arg>
+<arg>1</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:43.139" level="INFO">${Password} = sunisa.s</msg>
+<status status="PASS" starttime="20221124 16:35:43.139" endtime="20221124 16:35:43.139"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221124 16:35:43.140" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20221124 16:35:43.140" endtime="20221124 16:35:45.883"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221124 16:35:45.883" endtime="20221124 16:35:46.094"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:43.139" endtime="20221124 16:35:46.094"/>
+</kw>
+<kw name="Click Menu Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:48.112" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:46.097" endtime="20221124 16:35:48.112"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:48.112" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a'.</msg>
+<msg timestamp="20221124 16:35:48.117" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:48.126" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<status status="FAIL" starttime="20221124 16:35:48.112" endtime="20221124 16:35:48.128"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:46.096" endtime="20221124 16:35:48.129"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:48.130" endtime="20221124 16:35:48.131"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:48.131" endtime="20221124 16:35:48.131"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:48.132" endtime="20221124 16:35:48.132"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:48.133" endtime="20221124 16:35:48.133"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20221124 16:35:48.134" endtime="20221124 16:35:48.134"/>
+</kw>
+<kw name="Click Sidebar Icon">
+<status status="NOT RUN" starttime="20221124 16:35:48.135" endtime="20221124 16:35:48.135"/>
+</kw>
+<kw name="Click Edit Project">
+<status status="NOT RUN" starttime="20221124 16:35:48.135" endtime="20221124 16:35:48.135"/>
+</kw>
+<kw name="Click Edit Email">
+<status status="NOT RUN" starttime="20221124 16:35:48.136" endtime="20221124 16:35:48.136"/>
+</kw>
+<kw name="Click Confirm">
+<status status="NOT RUN" starttime="20221124 16:35:48.137" endtime="20221124 16:35:48.137"/>
+</kw>
+<kw name="Click Confirm Again">
+<status status="NOT RUN" starttime="20221124 16:35:48.137" endtime="20221124 16:35:48.137"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20221124 16:35:48.137" endtime="20221124 16:35:48.137"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:43.135" endtime="20221124 16:35:48.138">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</status>
+</test>
+<test id="s1-t9" name="Edit Etc Success" line="201">
+<kw name="Open file Excel">
+<kw name="Open Excel" library="ExcelRobot">
+<arg>C:\\Automate Test\\Test_PMS\\automateTestTeam0\\ProjectManager\\test_editproject\\test_data.xlsx</arg>
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<msg timestamp="20221124 16:35:48.142" level="INFO">Opening file at C:\Automate Test\Test_PMS\automateTestTeam0\ProjectManager\test_editproject\test_data.xlsx</msg>
+<status status="PASS" starttime="20221124 16:35:48.142" endtime="20221124 16:35:48.154"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:48.142" endtime="20221124 16:35:48.154"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Username}</var>
+<arg>Project Manager</arg>
+<arg>0</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:48.156" level="INFO">${Username} = sunisa.su@gmail.com	</msg>
+<status status="PASS" starttime="20221124 16:35:48.155" endtime="20221124 16:35:48.156"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Password}</var>
+<arg>Project Manager</arg>
+<arg>1</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20221124 16:35:48.157" level="INFO">${Password} = sunisa.s</msg>
+<status status="PASS" starttime="20221124 16:35:48.157" endtime="20221124 16:35:48.157"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221124 16:35:48.160" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20221124 16:35:48.159" endtime="20221124 16:35:50.763"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221124 16:35:50.763" endtime="20221124 16:35:50.935"/>
+</kw>
+<status status="PASS" starttime="20221124 16:35:48.159" endtime="20221124 16:35:50.935"/>
+</kw>
+<kw name="Click Menu Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221124 16:35:52.940" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221124 16:35:50.936" endtime="20221124 16:35:52.941"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221124 16:35:52.941" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a'.</msg>
+<msg timestamp="20221124 16:35:52.944" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:52.951" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<status status="FAIL" starttime="20221124 16:35:52.941" endtime="20221124 16:35:52.954"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:50.936" endtime="20221124 16:35:52.955"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:52.957" endtime="20221124 16:35:52.957"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:52.958" endtime="20221124 16:35:52.958"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:52.959" endtime="20221124 16:35:52.959"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221124 16:35:52.959" endtime="20221124 16:35:52.959"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20221124 16:35:52.960" endtime="20221124 16:35:52.960"/>
+</kw>
+<kw name="Click Sidebar Icon">
+<status status="NOT RUN" starttime="20221124 16:35:52.960" endtime="20221124 16:35:52.960"/>
+</kw>
+<kw name="Click Edit Project">
+<status status="NOT RUN" starttime="20221124 16:35:52.961" endtime="20221124 16:35:52.961"/>
+</kw>
+<kw name="Click Edit etc">
+<status status="NOT RUN" starttime="20221124 16:35:52.961" endtime="20221124 16:35:52.961"/>
+</kw>
+<kw name="Click Confirm">
+<status status="NOT RUN" starttime="20221124 16:35:52.962" endtime="20221124 16:35:52.962"/>
+</kw>
+<kw name="Click Confirm Again">
+<status status="NOT RUN" starttime="20221124 16:35:52.963" endtime="20221124 16:35:52.963"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20221124 16:35:52.963" endtime="20221124 16:35:52.963"/>
+</kw>
+<status status="FAIL" starttime="20221124 16:35:48.141" endtime="20221124 16:35:52.964">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</status>
+</test>
+<status status="FAIL" starttime="20221124 16:34:38.178" endtime="20221124 16:35:52.967"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="8" skip="0" id="s1" name="Editproject">Editproject</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221124 16:35:18.112" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:22.963" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:27.983" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:32.719" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:38.014" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:43.109" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:48.117" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+<msg timestamp="20221124 16:35:52.944" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0113ACD3+2075859]
+	Ordinal0 [0x010CEE61+1633889]
+	Ordinal0 [0x00FCB7BD+571325]
+	Ordinal0 [0x00FB2E1A+470554]
+	Ordinal0 [0x0101AA0B+895499]
+	Ordinal0 [0x0102AC96+961686]
+	Ordinal0 [0x01017136+880950]
+	Ordinal0 [0x00FEFEFD+720637]
+	Ordinal0 [0x00FF0F3F+724799]
+	GetHandleVerifier [0x013EEED2+2769538]
+	GetHandleVerifier [0x013E0D95+2711877]
+	GetHandleVerifier [0x011CA03A+521194]
+	GetHandleVerifier [0x011C8DA0+516432]
+	Ordinal0 [0x010D682C+1665068]
+	Ordinal0 [0x010DB128+1683752]
+	Ordinal0 [0x010DB215+1683989]
+	Ordinal0 [0x010E6484+1729668]
+	BaseThreadInitThunk [0x75F17BA9+25]
+	RtlInitializeExceptionChain [0x76F2BB9B+107]
+	RtlClearBits [0x76F2BB1F+191]
+</msg>
+</errors>
+</robot>
