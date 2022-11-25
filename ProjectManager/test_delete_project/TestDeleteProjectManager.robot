@@ -42,27 +42,27 @@ Close Browser Page
     sleep   3s
     Close Browser 
 **Test Cases**
-# Delete are Project Success
-#     Open file Excel
-#     ${Username}=    Read Cell Data      Project Manager  0   1
-#     ${Password}=    Read Cell Data      Project Manager  1   1
-#     Open Project Monitoring System
-#     Click Menu Login
-#     sleep   2s
-#     Input Text      id:u_email      ${Username}
-#     sleep   2s
-#     Input Text      id:u_password   ${Password}
-#     Click to Login
-#     sleep   2s
-#     Click Sidebar Resiponse Project
-#     sleep   2s
-#     Delete Project
-#     sleep   2s
-#     Accept Delete Project
-#     sleep   2s
-#     Close Browser
+Delete are Project Success
+    Open file Excel
+    ${Username}=    Read Cell Data      Project Manager  0   1
+    ${Password}=    Read Cell Data      Project Manager  1   1
+    Open Project Monitoring System
+    Click Menu Login
+    sleep   2s
+    Input Text      id:u_email      ${Username}
+    sleep   2s
+    Input Text      id:u_password   ${Password}
+    Click to Login
+    sleep   2s
+    Click Sidebar Resiponse Project
+    sleep   2s
+    Delete Project
+    sleep   2s
+    Accept Delete Project
+    sleep   2s
+    Close Browser
     
-Delete are Project Wrong
+Delete are Project Failed with Click cancel button
     Open file Excel
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
