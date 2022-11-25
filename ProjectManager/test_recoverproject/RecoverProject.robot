@@ -50,7 +50,8 @@ Recover Project Success
     Click Recover
     Click Confirm
     Close Browser Page
-Add Project Failed
+
+Recover Project Failed with click cancel button
     Open file Excel
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
