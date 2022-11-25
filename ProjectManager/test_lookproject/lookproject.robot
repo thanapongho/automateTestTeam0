@@ -18,51 +18,51 @@ Click Menu Login
 Click to Login
     sleep   2s
     Click Element   //*[@id="loginBtn"]
-Click Sidebar Icon
+Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/a
-Click Recover
-    sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[6]/button
-Click Confirm
-    sleep   2s
-    Click Element   //*[@class="swal2-confirm swal2-styled"]
-Click Not Confirm
-    sleep   2s
-    Click Element     //*[@class="swal2-cancel swal2-styled"]
+    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+Close lookproject   
+    sleep   3s
+    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/button[1]
+Close wrongicon  
+    sleep   3s
+    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/button[3]
 Close Browser Page
     sleep   3s
     Close Browser 
-
 **Test Cases**
-Recover Project Success
+# pawanrat
+Look Project Success
     Open file Excel
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
     Click Menu Login
-    sleep   1s
+    sleep   2s
     Input Text      id:u_email      ${Username}
-    sleep   1s
+    sleep   2s
     Input Text      id:u_password   ${Password}
     Click to Login
-    Click Sidebar Icon
-    Click Recover
-    Click Confirm
-    Close Browser Page
-
-Recover Project Failed with click cancel button
+    sleep   2s
+    Click Sidebar Resiponse Project
+    sleep   2s
+    Close lookproject   
+    sleep   3s
+    Close Browser
+Look Project Failed
     Open file Excel
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
     Click Menu Login
-    sleep   1s
+    sleep   2s
     Input Text      id:u_email      ${Username}
-    sleep   1s
+    sleep   2s
     Input Text      id:u_password   ${Password}
     Click to Login
-    Click Sidebar Icon
-    Click Recover
-    Click Not Confirm
-    Close Browser Page
+    sleep   2s
+    Click Sidebar Resiponse Project
+    sleep   2s
+    Close wrongicon   
+    sleep   3s
+    Close Browser
