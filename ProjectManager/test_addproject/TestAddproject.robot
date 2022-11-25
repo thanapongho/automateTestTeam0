@@ -123,7 +123,6 @@ Add Project Failed No Project Name
     Click Gmail Customer
     Click ect
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Add Project Failed No Detail Project
     Open file Excel
@@ -147,7 +146,6 @@ Add Project Failed No Detail Project
     Click Gmail Customer
     Click ect
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Add Project Failed No Name Customer
     Open file Excel
@@ -171,7 +169,6 @@ Add Project Failed No Name Customer
     Click Gmail Customer
     Click ect
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Add Project Failed No Date
     Open file Excel
@@ -195,7 +192,6 @@ Add Project Failed No Date
     Click Gmail Customer
     Click ect
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Add Project Success
     Open file Excel
@@ -219,7 +215,6 @@ Add Project Success
     Click Gmail Customer
     Click ect
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Add Project Failed Not Completed Phone number
     Open file Excel
@@ -243,7 +238,6 @@ Add Project Failed Not Completed Phone number
     Click Gmail Customer
     Click ect
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Add Project Failed Not Completed Gmail
     Open file Excel
@@ -267,6 +261,5 @@ Add Project Failed Not Completed Gmail
     Click Wrong Gmail Customer
     Click ect
     Click Confirm
-    Click Confirm Again
     Close Browser Page
     

@@ -70,5 +70,3 @@ Finish Project Failed
     Click finish Project
     Click not confirm
     Close Browser Page
-
-
