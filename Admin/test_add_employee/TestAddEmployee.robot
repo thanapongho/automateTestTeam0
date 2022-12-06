@@ -55,7 +55,7 @@ Click Manage Activities In Project
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/a
 Click Add Employee In Project
     sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/button[4]
+    Click Element   //*[@id="listDiv"]/div/div/div/div/button[4]
 Click Add Employee
     sleep   2s
     Click Element   xpath=/html/body/div[4]/div/div/div[2]/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[4]/button
@@ -120,5 +120,3 @@ Add Employee Wrong Because Click Add Double Click
     sleep   2s
     Close Browser Page
     sleep   2s
-
-    
