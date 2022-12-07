@@ -99,7 +99,7 @@ Edit Employee Success
     Click Input Name Edit
     Click button Accept
     Close Browser Page
-Edit Wrong Because 
+Edit Wrong Because Click Cancle button
     Open file Excel
     ${Username}=    Read Cell Data      Admin  0   1
     ${Password}=    Read Cell Data      Admin  1   1
