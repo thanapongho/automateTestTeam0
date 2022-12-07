@@ -18,65 +18,56 @@ Click Menu Login
 Click to Login
     sleep   2s
     Click Element   //*[@id="loginBtn"]
-Click Sidebar Resiponse Project
+Click Sidebar Icon
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
-Click ManageProject
+    Click Element   //*[@id="sidebarnav"]/li[2]/a
+Click Manage Project
     sleep   2s
-    Click Element    xpath = /html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/a
-Click DeleteEmployee
+    Click Element   //*[@class="btn btn-tertiary btn-sm"]
+Click Recover Status
     sleep   2s
-    Click Element   xpath = /html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[6]/button
-Click confirm
+    Click Element   //*[@id="listDiv"]/div/div/div/div/button
+Click Confirm to Recover Status
     sleep   2s
     Click Element   //*[@class="swal2-confirm swal2-styled"]
-Click cancle
+Click Cancel to Recover Status
     sleep   2s
     Click Element   //*[@class="swal2-cancel swal2-styled"]
 Close Browser Page
     sleep   3s
     Close Browser 
+
 **Test Cases**
-# Pawanrat
-DeleteEmployee Success
+Recover Status Success
     Open file Excel
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
     Click Menu Login
-    sleep   2s
+    sleep   1s
     Input Text      id:u_email      ${Username}
-    sleep   2s
+    sleep   1s
     Input Text      id:u_password   ${Password}
     Click to Login
-    sleep   2s
-    Click Sidebar Resiponse Project
-    sleep   2s
-    Click ManageProject
-    sleep   2s
-    Click DeleteEmployee
-    sleep   2s
-    Click confirm
-    sleep   2s
-    Close Browser
-DeleteEmployee Failed
+    Click Sidebar Icon
+    Click Manage Project
+    Click Recover Status
+    Click Confirm to Recover Status
+    Close Browser Page
+    
+Recover Status Failed with click cancel button
     Open file Excel
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
     Click Menu Login
-    sleep   2s
+    sleep   1s
     Input Text      id:u_email      ${Username}
-    sleep   2s
+    sleep   1s
     Input Text      id:u_password   ${Password}
     Click to Login
-    sleep   2s
-    Click Sidebar Resiponse Project
-    sleep   2s
-    Click ManageProject
-    sleep   2s
-    Click DeleteEmployee
-    sleep   2s
-    Click cancle
-    sleep   2s
-    Close Browser
+    Click Sidebar Icon
+    Click Manage Project
+    Click Recover Status
+    Click Cancel to Recover Status
+    Close Browser Page
