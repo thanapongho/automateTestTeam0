@@ -30,14 +30,6 @@ Click List Employee
 Click Add Employee
     sleep   2s
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/button
-Serch Project
-    sleep   2s
-    Input Text     //*[@id="table_filter"]/label/input     บุญเติม
-Click Button to Export Excel
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/div[1]/button[1]
-Serch Wrong Project
-    sleep   2s
-    Input Text    //*[@id="table_filter"]/label/input     บุนเติม
 Input Name Employee
     sleep   2s
     Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[1]/input    สมชาย
@@ -46,7 +38,7 @@ Input Last Name Employee
     Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[2]/input    มีสกุล    
 Input Email
     sleep   2s
-    Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[3]/input    somchay.mee@gmail.comm
+    Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[3]/input    somchay.mee@gmail.com
 Input Phone
     sleep   2s
     Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[4]/input    0944628921
