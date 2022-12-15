@@ -21,6 +21,15 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+Click Sidebar Settings
+    sleep   2s
+    Click Element   xpath=/html/body/div[2]/aside/div/nav/ul/li[3]/a
+Click List Employee
+    sleep   2s
+    Click Element   xpath=/html/body/div[2]/aside/div/nav/ul/li[3]/ul/li[1]/a
+Click Add Employee
+    sleep   2s
+    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/button
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม
@@ -29,6 +38,33 @@ Click Button to Export Excel
 Serch Wrong Project
     sleep   2s
     Input Text    //*[@id="table_filter"]/label/input     บุนเติม
+Input Name Employee
+    sleep   2s
+    Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[1]/input    สมชาย
+Input Last Name Employee
+    sleep   2s
+    Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[2]/input    มีสกุล    
+Input Email
+    sleep   2s
+    Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[3]/input    somchay.mee@gmail.comm
+Input Phone
+    sleep   2s
+    Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[4]/input    0944628921
+Choose Rigth
+    sleep   2s
+    Click Element   xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[5]/select
+Choose Employee
+    sleep   2s
+    Click Element   xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[5]/select/option[4]   
+Click Accept Add Employee
+    sleep   2s
+    Click Element   xpath=/html/body/div[3]/div/div/div[3]/button[1]
+Click Accept Add Employee Fail
+    sleep   2s
+    Click Element   xpath=/html/body/div[3]/div/div/div[3]/button[1]
+Click Accept Employee 
+    sleep   2s
+    Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
 Delete Project
     sleep   2s
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[6]/button[3]
@@ -56,9 +92,6 @@ Click Manage Activities In Project
 Click Add Employee In Project
     sleep   2s
     Click Element   //*[@id="listDiv"]/div/div/div/div/button[4]
-Click Add Employee
-    sleep   2s
-    Click Element   xpath=/html/body/div[4]/div/div/div[2]/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[4]/button
 Click Add Employee Double Click
     sleep   2s
     Click Element   xpath=/html/body/div[4]/div/div/div[2]/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[4]/button
@@ -75,48 +108,41 @@ Add Employee Success
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
-    sleep   2s
     Input Text      id:u_email      ${Username}
-    sleep   2s
     Input Text      id:u_password   ${Password}
     Click to Login
-    sleep   2s
-    Click Sidebar Resiponse Project
-    sleep   2s
-    Click Manage Activities In Project
-    sleep   2s
-    Click Add Employee In Project
-    sleep   2s
+    Click Sidebar Settings
+    Click List Employee
     Click Add Employee
-    sleep   2s
-    Click Close Add Employee
-    sleep   2s
+    Input Name Employee
+    Input Last Name Employee
+    Input Email
+    Input Phone
+    Choose Rigth
+    Choose Employee
+    Click Accept Add Employee
+    Click Accept Employee 
     Close Browser Page
-    sleep   2s
 
-Add Employee Wrong Because Click Add Double Click
+Add Employee Fail
     Open file Excel
     ${Username}=    Read Cell Data      Admin  0   1
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
-    sleep   2s
     Input Text      id:u_email      ${Username}
-    sleep   2s
     Input Text      id:u_password   ${Password}
     Click to Login
-    sleep   2s
-    Click Sidebar Resiponse Project
-    sleep   2s
-    Click Manage Activities In Project
-    sleep   2s
-    Click Add Employee In Project
-    sleep   2s
+    Click Sidebar Settings
+    Click List Employee
     Click Add Employee
-    sleep   2s
-    Click Add Employee Double Click
-    sleep   2s
-    Click Close Add Employee
-    sleep   2s
-    Close Browser Page
-    sleep   2s
+    Input Name Employee
+    Input Last Name Employee
+    Input Email
+    Input Phone
+    Choose Rigth
+    Choose Employee
+    Click Accept Add Employee Fail
+    Close Browser Page    
+   
+
