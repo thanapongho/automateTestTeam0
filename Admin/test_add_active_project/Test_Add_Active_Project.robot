@@ -87,7 +87,7 @@ input Activity fail
     sleep   2s
     Input Text    //*[@id="tl_name"]     กำลังดำเนินการ
     Click Element  //*[@id="mainModalFooter"]/button[1]
-     sleep   2s
+    sleep   2s
     Click Element  xpath=/html/body/div[6]/div/div[3]/button[2]
     
 **Test Cases**
@@ -112,7 +112,6 @@ Add Activity Success
    input Activity
     sleep   2s
     Close Browser Page
-    sleep   2s
 
 Add Activity fail
     Open file Excel
@@ -135,4 +134,3 @@ Add Activity fail
   input Activity fail
     sleep   2s
     Close Browser Page
-    sleep   2s
