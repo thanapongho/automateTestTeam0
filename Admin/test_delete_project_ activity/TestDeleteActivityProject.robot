@@ -123,7 +123,7 @@ Delete Activity fail
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login
-   Click Sidebar Settings
-   Click Sidebar Project list
-  Click Delete Activity fail
+    Click Sidebar Settings
+    Click Sidebar Project list
+    Click Delete Activity fail
     Close Browser Page
