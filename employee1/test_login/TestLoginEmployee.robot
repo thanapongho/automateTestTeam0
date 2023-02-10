@@ -25,8 +25,8 @@ Close Browser Page
 **Test Cases**
 Login Employee Success
     Open file Excel
-    ${Username}=    Read Cell Data      Admin  0   1
-    ${Password}=    Read Cell Data      Admin  1   1
+    ${Username}=    Read Cell Data      Employee  0   1
+    ${Password}=    Read Cell Data      Employee  1   1
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
@@ -37,8 +37,8 @@ Login Employee Success
     Close Browser Page
 Login Employee Fail Without Username
     Open file Excel
-    ${Username}=    Read Cell Data      Admin  0   2
-    ${Password}=    Read Cell Data      Admin  1   2
+    ${Username}=    Read Cell Data      Employee  0   2
+    ${Password}=    Read Cell Data      Employee  1   2
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
@@ -49,8 +49,8 @@ Login Employee Fail Without Username
     Close Browser Page
 Login Employee Fail Without Password
     Open file Excel
-    ${Username}=    Read Cell Data      Admin  0   3
-    ${Password}=    Read Cell Data      Admin  1   3
+    ${Username}=    Read Cell Data      Employee  0   3
+    ${Password}=    Read Cell Data      Employee  1   3
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
@@ -61,8 +61,8 @@ Login Employee Fail Without Password
     Close Browser Page
 Login Employee Fail Forget Change Languge
     Open file Excel
-    ${Username}=    Read Cell Data      Admin  0   4
-    ${Password}=    Read Cell Data      Admin  1   4
+    ${Username}=    Read Cell Data      Employee  0   4
+    ${Password}=    Read Cell Data      Employee  1   4
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
@@ -73,8 +73,8 @@ Login Employee Fail Forget Change Languge
     Close Browser Page
 Login Employee Fail Username Incorrect
     Open file Excel
-    ${Username}=    Read Cell Data      Admin  0   5
-    ${Password}=    Read Cell Data      Admin  1   5
+    ${Username}=    Read Cell Data      Employee  0   5
+    ${Password}=    Read Cell Data      Employee  1   5
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
@@ -85,8 +85,8 @@ Login Employee Fail Username Incorrect
     Close Browser Page
 Login Employee Fail Password Incorrect
     Open file Excel
-    ${Username}=    Read Cell Data      Admin  0   6
-    ${Password}=    Read Cell Data      Admin  1   6
+    ${Username}=    Read Cell Data      Employee  0   6
+    ${Password}=    Read Cell Data      Employee  1   6
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
@@ -97,8 +97,8 @@ Login Employee Fail Password Incorrect
     Close Browser Page
 Login Employee Fail Single Quote Without Password
     Open file Excel
-    ${Username}=    Read Cell Data      Admin  0   7
-    ${Password}=    Read Cell Data      Admin  1   7
+    ${Username}=    Read Cell Data      Employee  0   7
+    ${Password}=    Read Cell Data      Employee  1   7
     Open Project Monitoring System
     Click Menu Login
     sleep   1s

@@ -21,20 +21,18 @@ Click to Login
 Click Dropdown Icon
     sleep   2s
     Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a
-Click Change Password
+Click Logout
     sleep   2s
-    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/div/a[2]  
-
-
+    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/div/a[3]
 Close Browser Page
     sleep   3s
     Close Browser 
 
 **Test Cases**
-View Profile Employee Success
+Logout Employee Success
     Open file Excel
-    ${Username}=    Read Cell Data      Employee  0   1
-    ${Password}=    Read Cell Data      Employee  1   1
+    ${Username}=    Read Cell Data      Project Manager  0   1
+    ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
@@ -43,15 +41,5 @@ View Profile Employee Success
     Input Text      id:u_password   ${Password}
     Click to Login
     Click Dropdown Icon
-    Click Change Password
-    sleep   2s
-    Input Text      id:curPwd       ${Password}
-    sleep   1s
-    Input Text      id:pwd          suchada*s
-    sleep   1s
-    Input Text      id:cfPwd        suchada*s
-    sleep   1s
-    Click Element   //*[@id="mainModalFooter"]/button[1]
-    sleep   1s
-    Click Element   //*[@class="swal2-confirm swal2-styled"]
+    Click Logout
     Close Browser Page
