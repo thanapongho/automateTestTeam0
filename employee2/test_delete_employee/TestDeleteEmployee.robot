@@ -14,7 +14,7 @@ Open Project Monitoring System
     Maximize Browser Window
 Click Menu Login
     sleep   2s
-    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a
+    Click Element   ///*[@class="nav-link waves-effect waves-dark profile-pic fs-5"]
 Click to Login
     sleep   2s
     Click Element   //*[@id="loginBtn"]
