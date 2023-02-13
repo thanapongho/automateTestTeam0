@@ -20,18 +20,18 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
-Search Project
+    Click Element   //*[@class="has-arrow waves-effect waves-dark"]
+Click Project Responsibility
     sleep   2s
-    Input Text     //*[@id="table_filter"]/label/input     ระบบจัดการเอกสารอัตโนมัติ
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
 Click Project Task
     sleep   2s
-    Click Element   //*[@class="btn btn-tertiary btn-sm"]
+    Click Element   //*[@class="name"]
 Click edit Project Task
     sleep   2s
-    Click Element   //*[@id="edit"]
+    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div[1]/div/div/div/div[2]/div/table/tbody/tr[2]/td[5]/button[2]
 Click edit detail Task
-    sleep   2s
+    sleep   3s
     Input Text   //*[@id="t_detail"]        ลูกค้าตรวจสอบ UX&UI
 Click edit calendar Task
     sleep   2s
@@ -62,7 +62,7 @@ Edit Task in Project Success
     Input Text      id:u_password   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
-    Search Project
+    Click Project Responsibility
     Click Project Task
     Click edit Project Task
     Click edit detail Task
@@ -83,7 +83,7 @@ Edit Task In Project Fail with cancel button
     Input Text      id:u_password   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
-    Search Project
+    Click Project Responsibility
     Click Project Task
     Click edit Project Task
     Click edit detail Task
