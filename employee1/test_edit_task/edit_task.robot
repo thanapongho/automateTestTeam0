@@ -72,7 +72,7 @@ Edit Task in Project Success
     Close Browser Page
 
 Edit Task In Project Fail with cancel button
-     Open file Excel
+    Open file Excel
     ${Username}=    Read Cell Data      Employee  0   1
     ${Password}=    Read Cell Data      Employee  1   1
     Open Project Monitoring System
