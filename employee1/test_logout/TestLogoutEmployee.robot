@@ -36,9 +36,9 @@ Logout Employee Success
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]     ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Click Dropdown Icon
     Click Logout

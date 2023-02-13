@@ -20,10 +20,10 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
-Serch Project
+    Click Element   //*[@class="has-arrow waves-effect waves-dark"]
+Click Project Responsibility
     sleep   2s
-    Input Text     //*[@id="table_filter"]/label/input     ระบบจัดการเอกสารอัตโนมัติ
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
 Click Manage Task Project
     sleep   2s
     Click Element   //*[@class="btn btn-tertiary btn-sm"]
@@ -49,10 +49,10 @@ Click Add document Project Task
     Choose File     id:uploadBtn   ${CURDIR}\\environmentTeam0.jpg
 Click Save Button
     sleep   2s
-    Click Element   //*[@id="mainModalFooter"]/button[1]
+    Click Element   <button type="button" class="btn btn-success" onclick="saveFormSubmit('new');">บันทึก</button>
 Click Confirm Button
     sleep   2s
-    Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
+    Click Element   //*[@class="swal2-confirm swal2-styled"]
 Close Browser Page
     sleep   5s
     Close Browser 
@@ -65,12 +65,12 @@ Add Task in Project Success
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
-    Serch Project
+    Click Project Responsibility
     Click Manage Task Project
     Click Add Project Task
     Click Dropdown Project Task

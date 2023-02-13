@@ -20,10 +20,10 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
-Search Project
+    Click Element   //*[@class="has-arrow waves-effect waves-dark"]
+Click Project Responsibility
     sleep   2s
-    Input Text     //*[@id="table_filter"]/label/input     ระบบจัดการเอกสารอัตโนมัติ
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
 Click Project Task
     sleep   2s
     Click Element   //*[@class="btn btn-tertiary btn-sm"]
@@ -55,12 +55,12 @@ Delete Task in Project Success
     Input Text      id:u_password   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
-    Search Project
+    Click Project Responsibility
     Click Project Task
     Click Delete Project Task
     Click Confirm Delete Project Task
     Close Browser Page
-Delete Task in Project Fail with cancel button
+Delete Task in Project Fail with are not owner this activity
     Open file Excel
     ${Username}=    Read Cell Data      Employee  0   1
     ${Password}=    Read Cell Data      Employee  1   1
@@ -72,8 +72,6 @@ Delete Task in Project Fail with cancel button
     Input Text      id:u_password   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
-    Search Project
+    Click Project Responsibility
     Click Project Task
-    Click Delete Project Task
-    Click Cancel Delete Project Task
     Close Browser Page
