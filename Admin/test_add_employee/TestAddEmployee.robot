@@ -23,31 +23,31 @@ Click Sidebar Resiponse Project
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
 Click Sidebar Settings
     sleep   2s
-    Click Element   xpath=/html/body/div[2]/aside/div/nav/ul/li[3]/a
+    Click Element   xpath=/html/body/div[2]/aside/div/nav/ul/li[4]/a
 Click List Employee
     sleep   2s
-    Click Element   xpath=/html/body/div[2]/aside/div/nav/ul/li[3]/ul/li[1]/a
+    Click Element   xpath=/html/body/div[2]/aside/div/nav/ul/li[4]/ul/li[1]
 Click Add Employee
     sleep   2s
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/button
 Input Name Employee
     sleep   2s
-    Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[1]/input    สมชาย
+    Input Text    //*[@id="u_firstname"]    สมชาย
 Input Last Name Employee
     sleep   2s
-    Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[2]/input    มีสกุล    
+    Input Text    //*[@id="u_lastname"]    มีสกุล    
 Input Email
     sleep   2s
-    Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[3]/input    somchay.mee@gmail.com
+    Input Text    //*[@id="u_email"]    somchay.mee@gmail.com
 Input Phone
     sleep   2s
-    Input Text    xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[4]/input    0944628921
+    Input Text    //*[@id="u_tel"]    0944628921
 Choose Rigth
     sleep   2s
-    Click Element   xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[5]/select
+    Click Element  //*[@id="u_role"] 
 Choose Employee
     sleep   2s
-    Click Element   xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div[5]/select/option[4]   
+    Click Element   xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div/div[3]/select/option[4]
 Click Accept Add Employee
     sleep   2s
     Click Element   xpath=/html/body/div[3]/div/div/div[3]/button[1]
@@ -55,8 +55,8 @@ Click Accept Add Employee Fail
     sleep   2s
     Click Element   xpath=/html/body/div[3]/div/div/div[3]/button[1]
 Click Accept Employee 
-    sleep   2s
-    Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
+    sleep   4s
+    Click Element   xpath=/html/body/div[7]/div/div[3]/button[1]
 Delete Project
     sleep   2s
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[6]/button[3]
@@ -100,8 +100,8 @@ Add Employee Success
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
-    Input Text      id:u_email      ${Username}
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_email"]      ${Username}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Click Sidebar Settings
     Click List Employee

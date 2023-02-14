@@ -21,8 +21,8 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[1]/li[2]/a
-    Click Element   //*[@id="sidebarnav"]/li[3]/a/i
-    Click Element   //*[@id="sidebarnav"]/li[3]/ul/li[1]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[4]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[4]/ul/li[1]/a/i
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม
@@ -73,7 +73,7 @@ Close Browser Page
 Click Suspended Employee
      Click Element  //*[@id="status31"]
 Click Edit Button Employee
-     Click Element  xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[8]/button[3]
+     Click Element  //*[@id="edit"]
 Click Input Name Edit
     sleep   2s
     Click Element  //*[@id="u_firstname"]
@@ -83,7 +83,8 @@ Click button Cancle
 Click button Accept
     sleep   2s
     Click Element   xpath=//*[@id="mainModalFooter"]/button[1]
-    Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
+    sleep   1s
+    Click Element   xpath=/html/body/div[7]/div/div[3]/button[1]
 **Test Cases**
 Edit Employee Success
     Open file Excel
@@ -91,6 +92,7 @@ Edit Employee Success
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    sleep  2s
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login
