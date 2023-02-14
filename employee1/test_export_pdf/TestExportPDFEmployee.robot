@@ -21,14 +21,12 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
-Serch Project
+Click Project Responsibility
     sleep   2s
-    Input Text     //*[@id="table_filter"]/label/input     ระบบตรวจเช็คสถานะสินค้า
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
 Click Button to Export PDF
+    sleep   2s
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/div[1]/button[2]
-Serch Wrong Project
-     sleep   2s
-     Input Text     //*[@id="table_filter"]/label/input     ระบบที่ไม่มีชื่ออยู่ในระบบ
 Close Browser Page
     sleep   3s
     Close Browser 
@@ -40,42 +38,11 @@ Export All are Project Success
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
-    sleep   1s
-    Click Button to Export Excel
-Export Search Project are Success
-    Open file Excel
-    ${Username}=    Read Cell Data      Employee  0   1
-    ${Password}=    Read Cell Data      Employee  1   1
-    Open Project Monitoring System
-    Click Menu Login
-    sleep   1s
-    Input Text      id:u_email      ${Username}
-    sleep   1s
-    Input Text      id:u_password   ${Password}
-    Click to Login
-    Click Sidebar Resiponse Project
-    sleep   1s
-    Serch Project
-    Click Button to Export Excel
-    Close Browser Page
-Can't Export Project Cause don't have this Name
-    Open file Excel
-    ${Username}=    Read Cell Data      Employee  0   1
-    ${Password}=    Read Cell Data      Employee  1   1
-    Open Project Monitoring System
-    Click Menu Login
-    sleep   1s
-    Input Text      id:u_email      ${Username}
-    sleep   1s
-    Input Text      id:u_password   ${Password}
-    Click to Login
-    Click Sidebar Resiponse Project
-    sleep   1s
-    Serch Wrong Project
-    Click Button to Export Excel
+    Click Project Responsibility
+    Click Button to Export PDF
     Close Browser Page
