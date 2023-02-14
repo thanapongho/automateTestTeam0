@@ -30,9 +30,9 @@ Login Employee Success
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Close Browser Page
 Login Employee Fail Without Username
@@ -42,7 +42,7 @@ Login Employee Fail Without Username
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
     Input Text      id:u_password   ${Password}
     Click to Login
@@ -54,7 +54,7 @@ Login Employee Fail Without Password
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
     Input Text      id:u_password   ${Password}
     Click to Login
@@ -66,7 +66,7 @@ Login Employee Fail Forget Change Languge
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
     Input Text      id:u_password   ${Password}
     Click to Login
@@ -78,7 +78,7 @@ Login Employee Fail Username Incorrect
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
     Input Text      id:u_password   ${Password}
     Click to Login
@@ -90,7 +90,7 @@ Login Employee Fail Password Incorrect
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
     Input Text      id:u_password   ${Password}
     Click to Login
@@ -102,7 +102,7 @@ Login Employee Fail Single Quote Without Password
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
     Input Text      id:u_password   ${Password}
     Click to Login
