@@ -21,13 +21,15 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+Click Project Responsibility
+    sleep   2s
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
 Serch Project
     sleep   2s
-    Input Text     //*[@id="table_filter"]/label/input     ระบบตรวจเช็คสถานะสินค้า
+    Input Text     //*[@id="table_filter"]/label/input     ระบบจัดการทรัพย์สิน
 Serch Wrong Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     ระบบที่ไม่มีชื่ออยู่ในระบบ
-
 Close Browser Page
     sleep   3s
     Close Browser 
@@ -40,11 +42,12 @@ Serch Project Success
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
+    Click Project Responsibility
     Serch Project
     Close Browser Page
 
@@ -55,10 +58,11 @@ Serch Project Fail
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
+    Click Project Responsibility
     Serch Wrong Project
     Close Browser Page
