@@ -30,9 +30,9 @@ Login Project Manager Success
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Close Browser Page
 Login Project Manager Fail Without Username
@@ -42,9 +42,9 @@ Login Project Manager Fail Without Username
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text       //*[@id="u_email"]     ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Close Browser Page
 Login Project Manager Fail Without Password
@@ -54,9 +54,9 @@ Login Project Manager Fail Without Password
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Close Browser Page
 Login Project Manager Fail Forget Change Languge
@@ -66,9 +66,9 @@ Login Project Manager Fail Forget Change Languge
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]      ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Close Browser Page
 Login Project Manager Fail Username Incorrect
@@ -78,9 +78,9 @@ Login Project Manager Fail Username Incorrect
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text       //*[@id="u_email"]     ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Close Browser Page
 Login Project Manager Fail Password Incorrect
@@ -90,9 +90,9 @@ Login Project Manager Fail Password Incorrect
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text       //*[@id="u_email"]     ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Close Browser Page
 Login Project Manager Fail Single Quote Without Password
@@ -102,8 +102,8 @@ Login Project Manager Fail Single Quote Without Password
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]     ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Close Browser Page
