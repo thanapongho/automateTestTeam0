@@ -21,8 +21,8 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[1]/li[2]/a
-    Click Element   //*[@id="sidebarnav"]/li[3]/a/i
-    Click Element   //*[@id="sidebarnav"]/li[3]/ul/li[1]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[4]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[4]/ul/li[1]/a/i
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม
@@ -87,7 +87,7 @@ Click button Accept
 Click button View
     Click Element   //*[@id="view"]
 Click button Change Password
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[8]/button[2]
+    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/button[2]
 Change Password
     sleep   2s
     Click Element   //*[@id="pwd"]
@@ -95,7 +95,8 @@ Change Password
     Click Element   //*[@id="cfPwd"]
     Input Text  //*[@id="cfPwd"]    pass1234
     Click Element   xpath=//*[@id="mainModalFooter"]/button[1]
-    Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
+    sleep   2s
+    Click Element   xpath=/html/body/div[7]/div/div[3]/button[1]
 Change Password Not Match
     sleep   2s
     Click Element   //*[@id="pwd"]

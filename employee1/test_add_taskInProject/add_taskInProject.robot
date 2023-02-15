@@ -44,12 +44,9 @@ Click choose date Project Task
     sleep   2s
     Click Element   //*[@id="t_createdate"]
     Press Keys      //*[@id="t_createdate"]     ENTER
-Click Add document Project Task
-    sleep   2s
-    Choose File     id:uploadBtn   ${CURDIR}\\environmentTeam0.jpg
 Click Save Button
     sleep   2s
-    Click Element   <button type="button" class="btn btn-success" onclick="saveFormSubmit('new');">บันทึก</button>
+    Click Element   xpath = /html/body/div[3]/div/div/div[3]/button[1]
 Click Confirm Button
     sleep   2s
     Click Element   //*[@class="swal2-confirm swal2-styled"]
@@ -77,7 +74,6 @@ Add Task in Project Success
     Click choose Project Task
     Fill out detail Project Task
     Click choose date Project Task
-    Click Add document Project Task
     Click Save Button
     Click Confirm Button
     Close Browser Page
