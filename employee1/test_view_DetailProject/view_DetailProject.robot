@@ -21,9 +21,12 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+Click Project Responsibility
+    sleep   2s
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
 Click View Detail Project
     sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]/u
+    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr/td[6]/button
     
 Close Browser Page
     sleep   3s
@@ -37,10 +40,11 @@ View Project Success
     Open Project Monitoring System
     Click Menu Login
     sleep   1s
-    Input Text      id:u_email      ${Username}
+    Input Text      //*[@id="u_email"]        ${Username}
     sleep   1s
-    Input Text      id:u_password   ${Password}
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
+    Click Project Responsibility
     Click View Detail Project
     Close Browser Page
