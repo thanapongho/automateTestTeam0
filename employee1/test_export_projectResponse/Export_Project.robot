@@ -34,7 +34,7 @@ Close Browser Page
     Close Browser 
 
 **Test Cases**
-Serch Project Success
+Click Export Success
     Open file Excel
     ${Username}=    Read Cell Data      Employee  0   1
     ${Password}=    Read Cell Data      Employee  1   1
