@@ -20,10 +20,10 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Dropdown Icon
     sleep   2s
-    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a
+    Click Element   //*[@id="main-wrapper"]/header/nav/div[3]/ul[2]/li/a
 Click Logout
     sleep   2s
-    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/div/a[3]
+    Click Element   //*[@id="main-wrapper"]/header/nav/div[3]/ul[2]/li/div/a[3]
 Close Browser Page
     sleep   3s
     Close Browser 

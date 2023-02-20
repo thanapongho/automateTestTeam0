@@ -21,6 +21,7 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[1]
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม
@@ -46,7 +47,7 @@ Click Cancle Project
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/button[3]
 Click Accept Cancle Project
     sleep   2s 
-    Click Element   xpath=/html/body/div[5]/div/div[3]/button[1]
+    Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
 Click Cancle Accept Project
     sleep   2s 
     Click Element   xpath=/html/body/div[5]/div/div[3]/button[2]
@@ -82,24 +83,16 @@ Cancle Project Success
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
-    Click Menu Login
-    sleep   2s
-    Input Text      id:u_email      ${Username}
-    sleep   2s
+    Click Menu Login   
+    sleep  1s
+    Input Text      id:u_email      ${Username}  
     Input Text      id:u_password   ${Password}
-    Click to Login
-    sleep   2s
-    Click Sidebar Resiponse Project
-    sleep   2s
-    Click Manage Activities
-    sleep   2s
-    Click Cancle Project
-    sleep   2s
-    Click Accept Cancle Project
-    sleep   2s
-    Close Browser Page
-    sleep   2s
-
+    Click to Login   
+    Click Sidebar Resiponse Project    
+    Click Manage Activities    
+    Click Cancle Project    
+    Click Accept Cancle Project    
+    Close Browser Page    
 Cancle Project Wrong
     Open file Excel
     ${Username}=    Read Cell Data      Project Manager  0   1
@@ -108,21 +101,15 @@ Cancle Project Wrong
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
-    Click Menu Login
-    sleep   2s
-    Input Text      id:u_email      ${Username}
-    sleep   2s
+    Click Menu Login   
+    sleep  1s
+    Input Text      id:u_email      ${Username}   
     Input Text      id:u_password   ${Password}
-    Click to Login
-    sleep   2s
-    Click Sidebar Resiponse Project
-    sleep   2s
-    Click Manage Activities
-    sleep   2s
-    Click Cancle Project
-    sleep   2s
-    Click Cancle Accept Project
-    sleep   2s
+    Click to Login  
+    Click Sidebar Resiponse Project   
+    Click Manage Activities  
+    Click Cancle Project    
+    Click Cancle Accept Project    
     Close Browser Page
-    sleep   2s
+    
     

@@ -22,8 +22,8 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[1]/li[2]/a
-    Click Element   //*[@id="sidebarnav"]/li[3]/a/i
-    Click Element   //*[@id="sidebarnav"]/li[3]/ul/li[1]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[4]/a
+    Click Element   //*[@id="sidebarnav"]/li[4]/ul/li[1]
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม
@@ -72,7 +72,10 @@ Close Browser Page
     sleep   3s
     Close Browser
 Click Suspended Employee
-     Click Element  //*[@id="status31"]
+     ${BG}   Get WebElement     //*[@id="status31"]
+    ${bg color}    Call Method    ${BG}    value_of_css_property    background-color
+    Run Keyword If    '${bg color}' == 'rgba(3, 169, 243, 1)'
+    ...   Click Element      //*[@id="status31"]
 **Test Cases**
 Suspended Success
     Open file Excel

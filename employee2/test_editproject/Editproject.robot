@@ -20,7 +20,8 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Icon
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/a
+    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[1]
 Click Edit Project
     sleep   2s
     Click Element   //*[@id="edit"]

@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 Library  ExcelRobot
 
+
 **Variables**
 ${URL}  http://dekdee2.informatics.buu.ac.th:9080/team0/
 ${BROWSER}  Google Chrome
@@ -21,8 +22,8 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[1]/li[2]/a
-    Click Element   //*[@id="sidebarnav"]/li[3]/a/i
-    Click Element   //*[@id="sidebarnav"]/li[3]/ul/li[1]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[4]/a
+    Click Element   //*[@id="sidebarnav"]/li[4]/ul/li[1]
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม
@@ -73,7 +74,10 @@ Close Browser Page
 Click On Another Employee
      Click Element  //*[@id="status31"]
 Click Recover Employee
-    Click Element   //*[@id="status30"]
+    ${BG}   Get WebElement     //*[@id="status30"]
+    ${bg color}    Call Method    ${BG}    value_of_css_property    background-color
+    Run Keyword If    '${bg color}' == 'rgba(255, 255, 255, 1)'
+    ...   Click Element      //*[@id="status30"]
 Click Edit Button Employee
      Click Element  xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[8]/button[3]
 Click Input Name Edit
@@ -113,6 +117,7 @@ Recover Success
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    sleep  2s
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login

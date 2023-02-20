@@ -21,6 +21,7 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[1]
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม
@@ -58,10 +59,10 @@ Click Add Employee In Project
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/button[4]
 Click Add Employee
     sleep   2s
-    Click Element   xpath=/html/body/div[4]/div/div/div[2]/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[4]/button
+    Click Element   //*[@id="user12"]/button
 Click Add Employee Double Click
     sleep   2s
-    Click Element   xpath=/html/body/div[4]/div/div/div[2]/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[4]/button
+    Click Element   //*[@id="user12"]/button
 Click Close Add Employee
     sleep   2s
     Click Element   xpath=/html/body/div[4]/div/div/div[3]/button
@@ -78,24 +79,15 @@ Add Employee Success
     ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
     Click Menu Login
-    sleep   2s
     Input Text      id:u_email      ${Username}
-    sleep   2s
     Input Text      id:u_password   ${Password}
     Click to Login
-    sleep   2s
     Click Sidebar Resiponse Project
-    sleep   2s
     Click Manage Activities In Project
-    sleep   2s
     Click Add Employee In Project
-    sleep   2s
     Click Add Employee
-    sleep   2s
     Click Close Add Employee
-    sleep   2s
     Close Browser Page
-    sleep   2s
 
 Add Employee Wrong Because Click Add Double Click
     Open file Excel
@@ -103,25 +95,16 @@ Add Employee Wrong Because Click Add Double Click
     ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
     Click Menu Login
-    sleep   2s
     Input Text      id:u_email      ${Username}
-    sleep   2s
     Input Text      id:u_password   ${Password}
     Click to Login
-    sleep   2s
     Click Sidebar Resiponse Project
-    sleep   2s
     Click Manage Activities In Project
-    sleep   2s
     Click Add Employee In Project
-    sleep   2s
     Click Add Employee
-    sleep   2s
     Click Add Employee Double Click
-    sleep   2s
     Click Close Add Employee
-    sleep   2s
     Close Browser Page
-    sleep   2s
+    
 
     

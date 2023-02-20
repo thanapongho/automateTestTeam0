@@ -21,8 +21,8 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[1]/li[2]/a
-    Click Element   //*[@id="sidebarnav"]/li[3]/a/i
-    Click Element   //*[@id="sidebarnav"]/li[3]/ul/li[1]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[4]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[4]/ul/li[1]/a/i
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม
@@ -93,6 +93,7 @@ View Success
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    sleep  1s
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login
@@ -105,6 +106,7 @@ View Wrong Because Don't CLick Button View
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    sleep  1s
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login

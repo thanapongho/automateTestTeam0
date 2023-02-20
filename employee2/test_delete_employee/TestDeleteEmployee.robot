@@ -14,22 +14,23 @@ Open Project Monitoring System
     Maximize Browser Window
 Click Menu Login
     sleep   2s
-    Click Element   ///*[@class="nav-link waves-effect waves-dark profile-pic fs-5"]
+    Click Element   //*[@class="nav-link waves-effect waves-dark profile-pic fs-5"]
 Click to Login
     sleep   2s
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[1]
 Click ManageProject
     sleep   2s
     Click Element    xpath = /html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/a
 Click DeleteEmployee
     sleep   2s
-    Click Element   xpath = /html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[6]/button
+    Click Element   //*[@id="del"]
 Click confirm
     sleep   2s
-    Click Element   //*[@class="swal2-confirm swal2-styled"]
+    Click Element   xpath=/html/body/div[7]/div/div[3]/button[1]
 Click cancle
     sleep   2s
     Click Element   //*[@class="swal2-cancel swal2-styled"]
@@ -43,40 +44,31 @@ DeleteEmployee Success
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
+    sleep  1s
     Click Menu Login
-    sleep   2s
+    sleep   1s
     Input Text      id:u_email      ${Username}
-    sleep   2s
     Input Text      id:u_password   ${Password}
     Click to Login
-    sleep   2s
     Click Sidebar Resiponse Project
-    sleep   2s
     Click ManageProject
-    sleep   2s
     Click DeleteEmployee
-    sleep   2s
     Click confirm
-    sleep   2s
+    sleep  1s
     Close Browser
 DeleteEmployee Failed
     Open file Excel
     ${Username}=    Read Cell Data      Project Manager  0   1
     ${Password}=    Read Cell Data      Project Manager  1   1
     Open Project Monitoring System
+    sleep  1s
     Click Menu Login
-    sleep   2s
+    sleep  1s
     Input Text      id:u_email      ${Username}
-    sleep   2s
     Input Text      id:u_password   ${Password}
     Click to Login
-    sleep   2s
     Click Sidebar Resiponse Project
-    sleep   2s
     Click ManageProject
-    sleep   2s
     Click DeleteEmployee
-    sleep   2s
     Click cancle
-    sleep   2s
     Close Browser
