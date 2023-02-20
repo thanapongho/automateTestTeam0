@@ -32,13 +32,13 @@ Click Add Employee
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/button
 Input Name Employee
     sleep   2s
-    Input Text    //*[@id="u_firstname"]    สมชาย
+    Input Text    //*[@id="u_firstname"]    สมศักดิ์
 Input Last Name Employee
     sleep   2s
-    Input Text    //*[@id="u_lastname"]    มีสกุล    
+    Input Text    //*[@id="u_lastname"]    เรืองศรี  
 Input Email
     sleep   2s
-    Input Text    //*[@id="u_email"]    somchay.mee@gmail.com
+    Input Text    //*[@id="u_email"]    sorn.lungling@gmail.com
 Input Phone
     sleep   2s
     Input Text    //*[@id="u_tel"]    0944628921
@@ -113,7 +113,6 @@ Add Employee Success
     Choose Rigth
     Choose Employee
     Click Accept Add Employee
-    Click Accept Employee 
     Close Browser Page
 
 Add Employee Fail

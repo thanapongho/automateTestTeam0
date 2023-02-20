@@ -21,9 +21,11 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+    sleep  1s
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
 Search Project
     sleep   2s
-    Input Text     //*[@id="table_filter"]/label/input     ระบบจัดการเอกสารอัตโนมัติ
+    Input Text     //*[@id="table_filter"]/label/input     ระบบจัดการทรัพย์สิน
 Click Project Task
     sleep   2s
     Click Element   //*[@class="btn btn-tertiary btn-sm"]

@@ -83,6 +83,7 @@ Suspended Success
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    sleep  1s
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login
@@ -95,6 +96,7 @@ Suspended Wrong Because Don't Click Suspended
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    sleep   1s
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login

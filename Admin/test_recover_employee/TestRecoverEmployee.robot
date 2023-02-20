@@ -72,12 +72,15 @@ Close Browser Page
     sleep   3s
     Close Browser
 Click On Another Employee
-     Click Element  //*[@id="status31"]
+     run keyword If    '${bg color}' == 'rgba(255, 255, 255, 1)'   
+    ...               Click Element      //*[@id="status31"]
 Click Recover Employee
     ${BG}   Get WebElement     //*[@id="status30"]
     ${bg color}    Call Method    ${BG}    value_of_css_property    background-color
-    Run Keyword If    '${bg color}' == 'rgba(255, 255, 255, 1)'
-    ...   Click Element      //*[@id="status30"]
+    run keyword If    '${bg color}' == 'rgba(255, 255, 255, 1)'   
+    ...               Click Element      //*[@id="status30"]
+    
+    
 Click Edit Button Employee
      Click Element  xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[8]/button[3]
 Click Input Name Edit
@@ -117,7 +120,7 @@ Recover Success
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
-    sleep  2s
+    sleep  1s
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login
@@ -131,6 +134,7 @@ Recover Because Click on another person
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    slee  1s
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login

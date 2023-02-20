@@ -20,16 +20,18 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@class="has-arrow waves-effect waves-dark"]
+    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[1]/li[2]/a/i
 Click Project Responsibility
-    sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
+      sleep   1s
+    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+    sleep  1s
+    Click Element  //*[@id="sidebarnav"]/li[2]/ul/li/a
 Click Project Task
     sleep   2s
     Click Element   //*[@class="name"]
 Click edit Project Task
     sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div[1]/div/div/div/div[2]/div/table/tbody/tr[2]/td[5]/button[2]
+    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div[1]/div/div/div/div/div[2]/div/table/tbody/tr[3]/td[5]/button[2]
 Click edit detail Task
     sleep   3s
     Input Text   //*[@id="t_detail"]        ลูกค้าตรวจสอบ UX&UI
@@ -44,7 +46,7 @@ Click confirm
     Click Element   //*[@class="swal2-confirm swal2-styled"]
 Click cancel
     sleep   2s
-    Click Element   //*[@class="swal2-cancel swal2-styled"]
+    Click Element   xpath=/html/body/div[3]/div/div/div[3]/button[2]
 Close Browser Page
     sleep   2s
     Close Browser
@@ -68,7 +70,6 @@ Edit Task in Project Success
     Click edit detail Task
     Click edit calendar Task
     Click Save
-    Click confirm
     Close Browser Page
 
 Edit Task In Project Fail with cancel button
@@ -88,6 +89,5 @@ Edit Task In Project Fail with cancel button
     Click edit Project Task
     Click edit detail Task
     Click edit calendar Task
-    Click Save
     Click cancel
     Close Browser Page

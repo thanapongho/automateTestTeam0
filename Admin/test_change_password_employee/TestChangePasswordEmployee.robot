@@ -95,8 +95,6 @@ Change Password
     Click Element   //*[@id="cfPwd"]
     Input Text  //*[@id="cfPwd"]    pass1234
     Click Element   xpath=//*[@id="mainModalFooter"]/button[1]
-    sleep   2s
-    Click Element   xpath=/html/body/div[7]/div/div[3]/button[1]
 Change Password Not Match
     sleep   2s
     Click Element   //*[@id="pwd"]
@@ -111,6 +109,7 @@ Change Password Success
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    sleep  1s
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login
@@ -125,6 +124,7 @@ Change Password Because Input Password Not Match
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    sleep  1s
     Input Text      id:u_email      ${Username}
     Input Text      id:u_password   ${Password}
     Click to Login

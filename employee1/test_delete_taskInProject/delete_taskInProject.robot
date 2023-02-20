@@ -20,10 +20,12 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@class="has-arrow waves-effect waves-dark"]
+    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[1]/li[2]/a/i
 Click Project Responsibility
-    sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
+    sleep   1s
+    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+    sleep  1s
+    Click Element  //*[@id="sidebarnav"]/li[2]/ul/li/a
 Click Project Task
     sleep   2s
     Click Element   //*[@class="btn btn-tertiary btn-sm"]

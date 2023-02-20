@@ -99,7 +99,6 @@ Edit Employee Success
     Click Sidebar Resiponse Project
     Click Edit Button Employee
     Click Input Name Edit
-    Click button Accept
     Close Browser Page
 Edit Wrong Because Click Cancle button
     Open file Excel
@@ -113,5 +112,4 @@ Edit Wrong Because Click Cancle button
     Click Sidebar Resiponse Project
     Click Edit Button Employee
     Click Input Name Edit
-    Click button Cancle
     Close Browser Page
