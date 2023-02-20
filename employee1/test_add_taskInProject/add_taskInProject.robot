@@ -20,7 +20,7 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@class="has-arrow waves-effect waves-dark"]
+    Click Element   //*[@id="sidebarnav"]/li[2]/a
 Click Project Responsibility
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
@@ -44,12 +44,12 @@ Click choose date Project Task
     sleep   2s
     Click Element   //*[@id="t_createdate"]
     Press Keys      //*[@id="t_createdate"]     ENTER
+Click choose time
+    sleep  2s
+    Input Text   //*[@id="t_createtime"]    12:30 AM
 Click Save Button
     sleep   2s
-    Click Element   xpath = /html/body/div[3]/div/div/div[3]/button[1]
-Click Confirm Button
-    sleep   2s
-    Click Element   //*[@class="swal2-confirm swal2-styled"]
+    Click Element   //*[@class="btn btn-success"]
 Close Browser Page
     sleep   5s
     Close Browser 
@@ -74,6 +74,6 @@ Add Task in Project Success
     Click choose Project Task
     Fill out detail Project Task
     Click choose date Project Task
+    Click choose time
     Click Save Button
-    Click Confirm Button
     Close Browser Page
