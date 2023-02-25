@@ -21,7 +21,7 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
-    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[1]
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2] 
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม
@@ -32,7 +32,7 @@ Serch Wrong Project
     Input Text    //*[@id="table_filter"]/label/input     บุนเติม
 Delete Project
     sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[6]/button[3]
+    Click Element   //*[@id="del"]
 Accept Delete Project
     sleep   2s
     Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]

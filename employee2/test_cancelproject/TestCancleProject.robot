@@ -21,7 +21,7 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
-    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[1]
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2]
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม
@@ -43,14 +43,25 @@ Click Manage Activities
     sleep   2s
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/a
 Click Cancle Project
-    sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/button[3]
-Click Accept Cancle Project
-    sleep   2s 
-    Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
-Click Cancle Accept Project
-    sleep   2s 
-    Click Element   xpath=/html/body/div[5]/div/div[3]/button[2]
+    sleep  1s
+    Click Element   //*[@id="task"]/div/div/div/div/button[3]
+    sleep  1s
+    Click Element  //*[@id="c_cl_id"]
+    sleep  1s
+    Click Element  //*[@id="c_cl_id"]/option[2]
+    Input Text   //*[@id="c_detail"]     ไม่สามารถดำเนินโครงการต่อไปได้ เนื่องจากไม่สารมารถติดต่อลูกค้าได้
+    Click Element  //*[@id="mainModalFooter"]/button[1]
+    sleep  1s
+    Click Element   xpath=/html/body/div[8]/div/div[3]/button[1]
+Click Cancle Button
+    sleep  1s
+    Click Element   //*[@id="task"]/div/div/div/div/button[3]
+    sleep  1s
+    Click Element  //*[@id="c_cl_id"]
+    sleep  1s
+    Click Element  //*[@id="c_cl_id"]/option[2]
+    Input Text   //*[@id="c_detail"]     ไม่สามารถดำเนินโครงการต่อไปได้ เนื่องจากไม่สารมารถติดต่อลูกค้าได้
+    Click Element  //*[@id="mainModalFooter"]/button[2]
 Close Browser Page
     sleep   3s
     Close Browser 
@@ -91,7 +102,6 @@ Cancle Project Success
     Click Sidebar Resiponse Project    
     Click Manage Activities    
     Click Cancle Project    
-    Click Accept Cancle Project    
     Close Browser Page    
 Cancle Project Wrong
     Open file Excel
@@ -108,8 +118,7 @@ Cancle Project Wrong
     Click to Login  
     Click Sidebar Resiponse Project   
     Click Manage Activities  
-    Click Cancle Project    
-    Click Cancle Accept Project    
+    Click Cancle Button      
     Close Browser Page
     
     
