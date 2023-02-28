@@ -20,7 +20,8 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[2]/a
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2]/a
 Close lookproject   
     sleep   3s
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/button[1]

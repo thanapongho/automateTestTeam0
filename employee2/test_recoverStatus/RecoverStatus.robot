@@ -21,12 +21,13 @@ Click to Login
 Click Sidebar Icon
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2]/a
 Click Manage Project
     sleep   2s
     Click Element   //*[@class="btn btn-tertiary btn-sm"]
 Click Recover Status
     sleep   2s
-    Click Element   //*[@id="listDiv"]/div/div/div/div/button
+    Click Element   //*[@id="task"]/div/div/div/div/button
 Click Confirm to Recover Status
     sleep   2s
     Click Element   //*[@class="swal2-confirm swal2-styled"]

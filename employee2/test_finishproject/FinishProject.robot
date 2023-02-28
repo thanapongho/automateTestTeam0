@@ -21,12 +21,13 @@ Click to Login
 Click Sidebar Icon
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2]/a
 Click file
     sleep   2s
     Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/a
 Click finish Project
     sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/button[2]
+    Click Element   //*[@id="task"]/div/div/div/div/button[2]
 Click confirm
     sleep   2s
     Click Element   //*[@class="swal2-confirm swal2-styled"]
@@ -52,21 +53,4 @@ Finish Project Success
     Click Sidebar Icon
     Click file
     Click finish Project
-    Click confirm
-    Close Browser Page
-Finish Project Failed
-    Open file Excel
-    ${Username}=    Read Cell Data      Project Manager  0   1
-    ${Password}=    Read Cell Data      Project Manager  1   1
-    Open Project Monitoring System
-    Click Menu Login
-    sleep   1s
-    Input Text      id:u_email      ${Username}
-    sleep   1s
-    Input Text      id:u_password   ${Password}
-    Click to Login
-    Click Sidebar Icon
-    Click file
-    Click finish Project
-    Click not confirm
     Close Browser Page

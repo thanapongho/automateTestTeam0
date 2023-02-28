@@ -19,8 +19,10 @@ Click to Login
     sleep   2s
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
-    sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/a
+    sleep   1s
+    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+    sleep  1s
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2]/a
 Click Export Excel
     sleep   2s
     Click Element   //*[@id="table_wrapper"]/div[1]/button[1]
