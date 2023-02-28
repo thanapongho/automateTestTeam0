@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230227 23:08:36.944" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\ASUS\.vscode\extensions\robocorp.robotframework-lsp-1.9.2\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open file Excel">
+<msg timestamp="20230227 23:08:38.143" level="FAIL">No keyword with name 'Open file Excel' found.</msg>
+<status status="FAIL" starttime="20230227 23:08:38.143" endtime="20230227 23:08:38.143"/>
+</kw>
+<kw name="Read Cell Data">
+<var>${Username}</var>
+<arg>Admin</arg>
+<arg>0</arg>
+<arg>1</arg>
+<status status="NOT RUN" starttime="20230227 23:08:38.150" endtime="20230227 23:08:38.150"/>
+</kw>
+<kw name="Read Cell Data">
+<var>${Password}</var>
+<arg>Admin</arg>
+<arg>1</arg>
+<arg>1</arg>
+<status status="NOT RUN" starttime="20230227 23:08:38.154" endtime="20230227 23:08:38.155"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<status status="NOT RUN" starttime="20230227 23:08:38.159" endtime="20230227 23:08:38.159"/>
+</kw>
+<kw name="Click Menu Login">
+<status status="NOT RUN" starttime="20230227 23:08:38.163" endtime="20230227 23:08:38.163"/>
+</kw>
+<kw name="Input Text">
+<arg>//*[@id="u_email"]</arg>
+<arg>${Username}</arg>
+<status status="NOT RUN" starttime="20230227 23:08:38.167" endtime="20230227 23:08:38.167"/>
+</kw>
+<kw name="Input Text">
+<arg>//*[@id="u_password"]</arg>
+<arg>${Password}</arg>
+<status status="NOT RUN" starttime="20230227 23:08:38.172" endtime="20230227 23:08:38.172"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20230227 23:08:38.177" endtime="20230227 23:08:38.177"/>
+</kw>
+<kw name="Click Sidebar Settings">
+<status status="NOT RUN" starttime="20230227 23:08:38.181" endtime="20230227 23:08:38.181"/>
+</kw>
+<kw name="Click Announce system">
+<status status="NOT RUN" starttime="20230227 23:08:38.185" endtime="20230227 23:08:38.185"/>
+</kw>
+<kw name="Click Add Announce">
+<status status="NOT RUN" starttime="20230227 23:08:38.190" endtime="20230227 23:08:38.190"/>
+</kw>
+<kw name="Click Save button">
+<status status="NOT RUN" starttime="20230227 23:08:38.194" endtime="20230227 23:08:38.194"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20230227 23:08:38.198" endtime="20230227 23:08:38.198"/>
+</kw>
+<kw name="Open file Excel">
+<msg timestamp="20230227 23:09:06.817" level="FAIL">No keyword with name 'Open file Excel' found.</msg>
+<status status="FAIL" starttime="20230227 23:09:06.817" endtime="20230227 23:09:06.817"/>
+</kw>
+<kw name="Read Cell Data">
+<var>${Username}</var>
+<arg>Admin</arg>
+<arg>0</arg>
+<arg>1</arg>
+<status status="NOT RUN" starttime="20230227 23:09:06.822" endtime="20230227 23:09:06.822"/>
+</kw>
+<kw name="Read Cell Data">
+<var>${Password}</var>
+<arg>Admin</arg>
+<arg>1</arg>
+<arg>1</arg>
+<status status="NOT RUN" starttime="20230227 23:09:06.828" endtime="20230227 23:09:06.828"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<status status="NOT RUN" starttime="20230227 23:09:06.832" endtime="20230227 23:09:06.832"/>
+</kw>
+<kw name="Click Menu Login">
+<status status="NOT RUN" starttime="20230227 23:09:06.836" endtime="20230227 23:09:06.836"/>
+</kw>
+<kw name="Input Text">
+<arg>//*[@id="u_email"]</arg>
+<arg>${Username}</arg>
+<status status="NOT RUN" starttime="20230227 23:09:06.840" endtime="20230227 23:09:06.840"/>
+</kw>
+<kw name="Input Text">
+<arg>//*[@id="u_password"]</arg>
+<arg>${Password}</arg>
+<status status="NOT RUN" starttime="20230227 23:09:06.847" endtime="20230227 23:09:06.847"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20230227 23:09:06.851" endtime="20230227 23:09:06.851"/>
+</kw>
+<kw name="Click Sidebar Settings">
+<status status="NOT RUN" starttime="20230227 23:09:06.855" endtime="20230227 23:09:06.855"/>
+</kw>
+<kw name="Click Announce system">
+<status status="NOT RUN" starttime="20230227 23:09:06.861" endtime="20230227 23:09:06.861"/>
+</kw>
+<kw name="Click Add Announce">
+<status status="NOT RUN" starttime="20230227 23:09:06.867" endtime="20230227 23:09:06.867"/>
+</kw>
+<kw name="Click Save button">
+<status status="NOT RUN" starttime="20230227 23:09:06.871" endtime="20230227 23:09:06.871"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20230227 23:09:06.878" endtime="20230227 23:09:06.878"/>
+</kw>
+<status status="PASS" starttime="20230227 23:08:37.014" endtime="20230227 23:09:54.776"/>
+</kw>
+<status status="PASS" starttime="20230227 23:08:37.012" endtime="20230227 23:09:54.778"/>
+</test>
+<status status="PASS" starttime="20230227 23:08:36.951" endtime="20230227 23:09:54.780"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
