@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20230228 22:44:50.197" rpa="false" schemaversion="3">
+<suite id="s1" name="Reportstartproject" source="C:\xampp\htdocs\automateTestTeam0\Admin\test_report_projectstart\reportstartproject.robot">
+<test id="s1-t1" name="Select Start Project Success" line="35">
+<kw name="Open file Excel">
+<kw name="Open Excel" library="ExcelRobot">
+<arg>C:\\xampp\\htdocs\\automateTestTeam0\\Admin\\test_report_projectstart\\test_data.xlsx</arg>
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<msg timestamp="20230228 22:44:50.635" level="INFO">Opening file at C:\xampp\htdocs\automateTestTeam0\Admin\test_report_projectstart\test_data.xlsx</msg>
+<status status="PASS" starttime="20230228 22:44:50.635" endtime="20230228 22:44:50.638"/>
+</kw>
+<status status="PASS" starttime="20230228 22:44:50.635" endtime="20230228 22:44:50.638"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Username}</var>
+<arg>Admin</arg>
+<arg>0</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20230228 22:44:50.639" level="INFO">${Username} = test@gmail.com</msg>
+<status status="PASS" starttime="20230228 22:44:50.639" endtime="20230228 22:44:50.639"/>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<var>${Password}</var>
+<arg>Admin</arg>
+<arg>1</arg>
+<arg>1</arg>
+<doc>Uses the column and row to return the data from that cell.</doc>
+<msg timestamp="20230228 22:44:50.639" level="INFO">${Password} = kajorn.n</msg>
+<status status="PASS" starttime="20230228 22:44:50.639" endtime="20230228 22:44:50.639"/>
+</kw>
+<kw name="Open Project Monitoring System">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230228 22:44:50.641" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20230228 22:44:50.640" endtime="20230228 22:44:52.511"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20230228 22:44:52.516" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x002537D3]
+	(No symbol) [0x001E8B81]
+	(No symbol) [0x000EB36D]
+	(No symbol) [0x000CE5DA]
+	(No symbol) [0x0013F0CB]
+	(No symbol) [0x00150A56]
+	(No symbol) [0x0013B216]
+	(No symbol) [0x00110D97]
+	(No symbol) [0x0011253D]
+	GetHandleVerifier [0x004CABF2+2510930]
+	GetHandleVerifier [0x004F8EC1+2700065]
+	GetHandleVerifier [0x004FC86C+2714828]
+	GetHandleVerifier [0x00303480+645344]
+	(No symbol) [0x001F0FD2]
+	(No symbol) [0x001F6C68]
+	(No symbol) [0x001F6D4B]
+	(No symbol) [0x00200D6B]
+	BaseThreadInitThunk [0x76447D69+25]
+	RtlInitializeExceptionChain [0x7748BB9B+107]
+	RtlClearBits [0x7748BB1F+191]
+	(No symbol) [0x00000000]
+</msg>
+<msg timestamp="20230228 22:44:52.519" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x002537D3]
+	(No symbol) [0x001E8B81]
+	(No symbol) [0x000EB36D]
+	(No symbol) [0x000CE5DA]
+	(No symbol) [0x0013F0CB]
+	(No symbol) [0x00150A56]
+	(No symbol) [0x0013B216]
+	(No symbol) [0x00110D97]
+	(No symbol) [0x0011253D]
+	GetHandleVerifier [0x004CABF2+2510930]
+	GetHandleVerifier [0x004F8EC1+2700065]
+	GetHandleVerifier [0x004FC86C+2714828]
+	GetHandleVerifier [0x00303480+645344]
+	(No symbol) [0x001F0FD2]
+	(No symbol) [0x001F6C68]
+	(No symbol) [0x001F6D4B]
+	(No symbol) [0x00200D6B]
+	BaseThreadInitThunk [0x76447D69+25]
+	RtlInitializeExceptionChain [0x7748BB9B+107]
+	RtlClearBits [0x7748BB1F+191]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20230228 22:44:52.511" endtime="20230228 22:44:52.521"/>
+</kw>
+<status status="FAIL" starttime="20230228 22:44:50.639" endtime="20230228 22:44:52.521"/>
+</kw>
+<kw name="Click Menu Login">
+<status status="NOT RUN" starttime="20230228 22:44:52.522" endtime="20230228 22:44:52.522"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230228 22:44:52.522" endtime="20230228 22:44:52.522"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_email</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230228 22:44:52.522" endtime="20230228 22:44:52.523"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230228 22:44:52.523" endtime="20230228 22:44:52.523"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:u_password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230228 22:44:52.523" endtime="20230228 22:44:52.523"/>
+</kw>
+<kw name="Click to Login">
+<status status="NOT RUN" starttime="20230228 22:44:52.524" endtime="20230228 22:44:52.524"/>
+</kw>
+<kw name="Click Sidebar Resiponse Project">
+<status status="NOT RUN" starttime="20230228 22:44:52.524" endtime="20230228 22:44:52.524"/>
+</kw>
+<kw name="Select Project Start">
+<status status="NOT RUN" starttime="20230228 22:44:52.524" endtime="20230228 22:44:52.524"/>
+</kw>
+<kw name="Close Browser Page">
+<status status="NOT RUN" starttime="20230228 22:44:52.525" endtime="20230228 22:44:52.525"/>
+</kw>
+<status status="FAIL" starttime="20230228 22:44:50.634" endtime="20230228 22:44:52.526">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x002537D3]
+	(No symbol) [0x001E8B81]
+	(No symbol) [0x000EB36D]
+	(No symbol) [0x000CE5DA]
+	(No symbol) [0x0013F0CB]
+	(No symbol) [0x00150A56]
+	(No symbol) [0x0013B216]
+	(No symbol) [0x00110D97]
+	(No symbol) [0x0011253D]
+	GetHandleVerifier [0x004CABF2+2510930]
+	GetHandleVerifier [0x004F8EC1+2700065]
+	GetHandleVerifier [0x004FC86C+2714828]
+	GetHandleVerifier [0x00303480+645344]
+	(No symbol) [0x001F0FD2]
+	(No symbol) [0x001F6C68]
+	(No symbol) [0x001F6D4B]
+	(No symbol) [0x00200D6B]
+	BaseThreadInitThunk [0x76447D69+25]
+	RtlInitializeExceptionChain [0x7748BB9B+107]
+	RtlClearBits [0x7748BB1F+191]
+	(No symbol) [0x00000000]
+</status>
+</test>
+<status status="FAIL" starttime="20230228 22:44:50.199" endtime="20230228 22:44:52.530"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Reportstartproject">Reportstartproject</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230228 22:44:52.516" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x002537D3]
+	(No symbol) [0x001E8B81]
+	(No symbol) [0x000EB36D]
+	(No symbol) [0x000CE5DA]
+	(No symbol) [0x0013F0CB]
+	(No symbol) [0x00150A56]
+	(No symbol) [0x0013B216]
+	(No symbol) [0x00110D97]
+	(No symbol) [0x0011253D]
+	GetHandleVerifier [0x004CABF2+2510930]
+	GetHandleVerifier [0x004F8EC1+2700065]
+	GetHandleVerifier [0x004FC86C+2714828]
+	GetHandleVerifier [0x00303480+645344]
+	(No symbol) [0x001F0FD2]
+	(No symbol) [0x001F6C68]
+	(No symbol) [0x001F6D4B]
+	(No symbol) [0x00200D6B]
+	BaseThreadInitThunk [0x76447D69+25]
+	RtlInitializeExceptionChain [0x7748BB9B+107]
+	RtlClearBits [0x7748BB1F+191]
+	(No symbol) [0x00000000]
+</msg>
+</errors>
+</robot>
