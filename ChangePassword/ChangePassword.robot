@@ -8,7 +8,7 @@ ${BROWSER}  Google Chrome
 
 **Keywords**
 Open file Excel
-    Open Excel    ${CURDIR}\\test_data.xlsx
+    Open Excel    ${CURDIR}\\test_data.xlsx                                                                                                       
 Open Project Monitoring System
     open Browser  ${URL}  ${BROWSER}  
     Maximize Browser Window

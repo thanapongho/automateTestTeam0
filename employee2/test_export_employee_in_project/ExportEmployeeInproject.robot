@@ -8,6 +8,7 @@ ${BROWSER}  Google Chrome
 
 **Keywords**
 Open file Excel
+    sleep  1s
     Open Excel    ${CURDIR}\\test_data.xlsx
 Open Project Monitoring System
     open Browser  ${URL}  ${BROWSER}  
@@ -21,9 +22,12 @@ Click to Login
 Click Sidebar Icon
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2]/a
 Click Manage Project
     sleep   2s
     Click Element   //*[@class="btn btn-tertiary btn-sm"]
+    sleep  1s
+    Click Element  //*[@id="permission-tab"]
 Click Export Excel
     sleep   2s
     Click Element   //*[@id="tablePermission_wrapper"]/div[1]/button[1]

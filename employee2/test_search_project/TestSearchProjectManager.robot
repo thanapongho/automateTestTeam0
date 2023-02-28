@@ -20,7 +20,8 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/a/i
+    Click Element   //*[@id="sidebarnav"]/li[2]/a
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2]/a
 Serch Project
     sleep   2s
     Input Text     //*[@id="table_filter"]/label/input     บุญเติม

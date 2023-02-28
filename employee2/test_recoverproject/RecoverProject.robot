@@ -21,9 +21,10 @@ Click to Login
 Click Sidebar Icon
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2]/a
 Click Recover
     sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[6]/button
+    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/button
 Click Confirm
     sleep   2s
     Click Element   //*[@class="swal2-confirm swal2-styled"]

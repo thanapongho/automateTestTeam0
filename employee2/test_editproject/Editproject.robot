@@ -21,7 +21,7 @@ Click to Login
 Click Sidebar Icon
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
-    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[1]
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2] 
 Click Edit Project
     sleep   2s
     Click Element   //*[@id="edit"]
@@ -78,7 +78,6 @@ Edit Name Project Success
     Click Edit Project
     Click Edit Name Project
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Edit Name Project Failed
     Open file Excel
@@ -95,7 +94,6 @@ Edit Name Project Failed
     Click Edit Project
     Click Edit Name Project
     Click Confirm
-    Click NotConfirm Again
     Close Browser Page
 Edit Detail Project Success
     Open file Excel
@@ -112,7 +110,6 @@ Edit Detail Project Success
     Click Edit Project
     Click Edit Detail Project
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Edit Customer Name Success
     Open file Excel
@@ -129,7 +126,6 @@ Edit Customer Name Success
     Click Edit Project
     Click Edit Customer Name
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Edit Date Project Success
     Open file Excel
@@ -146,7 +142,6 @@ Edit Date Project Success
     Click Edit Project
     Click Edit Date Project
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Edit TelNo Customer Success
     Open file Excel
@@ -163,7 +158,6 @@ Edit TelNo Customer Success
     Click Edit Project
     Click Edit Telno
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Edit Line Customer Success
     Open file Excel
@@ -180,7 +174,6 @@ Edit Line Customer Success
     Click Edit Project
     Click Edit Line
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Edit Email Customer Success
     Open file Excel
@@ -197,7 +190,6 @@ Edit Email Customer Success
     Click Edit Project
     Click Edit Email
     Click Confirm
-    Click Confirm Again
     Close Browser Page
 Edit Etc Success
     Open file Excel
@@ -214,5 +206,4 @@ Edit Etc Success
     Click Edit Project
     Click Edit etc
     Click Confirm
-    Click Confirm Again
     Close Browser Page
