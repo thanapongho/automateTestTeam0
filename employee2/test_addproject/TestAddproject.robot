@@ -23,7 +23,7 @@ Click Sidebar Icon
     Click Element   //*[@id="sidebarnav"]/li[2]/a
 Click Add Project
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2]/a
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[1]/a
 Click Name Project
     sleep   2s
     Input Text   //*[@id="p_name"]   บุญเติม
@@ -71,10 +71,7 @@ Click ect
     Input Text      //*[@id="p_othercontact"]   บริการรับชำระเงินออนไลน์อื่นๆผ่านเครื่องรับชำระเงินอัตโนมัติ หรือ “ตู้บุญเติม”
 Click Confirm
     sleep   3s
-    Click Element   //*[@class="btn btn-success"]
-Click Confirm Again
-    sleep   3s
-    Click Element   //*[@class="swal2-confirm swal2-styled"]
+    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div[2]/button[1]
 Close Browser Page
     sleep   2s
     Close Browser 
@@ -103,5 +100,5 @@ Add Project Success
     Click Address
     Click ect
     Click Confirm
-    Click Confirm Again
+    sleep  1s
     Close Browser Page

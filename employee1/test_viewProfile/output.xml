@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20230220 23:27:05.364" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20230220 23:54:01.763" rpa="false" schemaversion="3">
 <suite id="s1" name="viewProfile" source="C:\xampp\htdocs\automateTestTeam0\employee1\test_viewProfile\viewProfile.robot">
 <test id="s1-t1" name="View Profile Employee Success" line="35">
 <kw name="Open file Excel">
 <kw name="Open Excel" library="ExcelRobot">
 <arg>C:\\xampp\\htdocs\\automateTestTeam0\\employee1\\test_viewProfile\\test_data.xlsx</arg>
 <doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
-<msg timestamp="20230220 23:27:05.827" level="INFO">Opening file at C:\xampp\htdocs\automateTestTeam0\employee1\test_viewProfile\test_data.xlsx</msg>
-<status status="PASS" starttime="20230220 23:27:05.827" endtime="20230220 23:27:05.831"/>
+<msg timestamp="20230220 23:54:02.410" level="INFO">Opening file at C:\xampp\htdocs\automateTestTeam0\employee1\test_viewProfile\test_data.xlsx</msg>
+<status status="PASS" starttime="20230220 23:54:02.410" endtime="20230220 23:54:02.413"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:05.826" endtime="20230220 23:27:05.831"/>
+<status status="PASS" starttime="20230220 23:54:02.410" endtime="20230220 23:54:02.413"/>
 </kw>
 <kw name="Read Cell Data" library="ExcelRobot">
 <var>${Username}</var>
@@ -17,8 +17,8 @@
 <arg>0</arg>
 <arg>1</arg>
 <doc>Uses the column and row to return the data from that cell.</doc>
-<msg timestamp="20230220 23:27:05.832" level="INFO">${Username} = suchada1512@gmail.com</msg>
-<status status="PASS" starttime="20230220 23:27:05.831" endtime="20230220 23:27:05.832"/>
+<msg timestamp="20230220 23:54:02.414" level="INFO">${Username} = suchada1512@gmail.com</msg>
+<status status="PASS" starttime="20230220 23:54:02.414" endtime="20230220 23:54:02.414"/>
 </kw>
 <kw name="Read Cell Data" library="ExcelRobot">
 <var>${Password}</var>
@@ -26,133 +26,133 @@
 <arg>1</arg>
 <arg>1</arg>
 <doc>Uses the column and row to return the data from that cell.</doc>
-<msg timestamp="20230220 23:27:05.832" level="INFO">${Password} = suchada</msg>
-<status status="PASS" starttime="20230220 23:27:05.832" endtime="20230220 23:27:05.832"/>
+<msg timestamp="20230220 23:54:02.415" level="INFO">${Password} = suchada</msg>
+<status status="PASS" starttime="20230220 23:54:02.414" endtime="20230220 23:54:02.415"/>
 </kw>
 <kw name="Open Project Monitoring System">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230220 23:27:05.833" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
-<status status="PASS" starttime="20230220 23:27:05.833" endtime="20230220 23:27:07.984"/>
+<msg timestamp="20230220 23:54:02.415" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20230220 23:54:02.415" endtime="20230220 23:54:04.526"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230220 23:27:07.984" endtime="20230220 23:27:08.204"/>
+<status status="PASS" starttime="20230220 23:54:04.526" endtime="20230220 23:54:04.721"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:05.832" endtime="20230220 23:27:08.205"/>
+<status status="PASS" starttime="20230220 23:54:02.415" endtime="20230220 23:54:04.723"/>
 </kw>
 <kw name="Click Menu Login">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:10.218" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230220 23:27:08.208" endtime="20230220 23:27:10.218"/>
+<msg timestamp="20230220 23:54:06.733" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 23:54:04.728" endtime="20230220 23:54:06.733"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@class="nav-link waves-effect waves-dark profile-pic fs-5"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:10.218" level="INFO">Clicking element '//*[@class="nav-link waves-effect waves-dark profile-pic fs-5"]'.</msg>
-<status status="PASS" starttime="20230220 23:27:10.218" endtime="20230220 23:27:10.252"/>
+<msg timestamp="20230220 23:54:06.734" level="INFO">Clicking element '//*[@class="nav-link waves-effect waves-dark profile-pic fs-5"]'.</msg>
+<status status="PASS" starttime="20230220 23:54:06.733" endtime="20230220 23:54:06.770"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:08.205" endtime="20230220 23:27:10.252"/>
+<status status="PASS" starttime="20230220 23:54:04.727" endtime="20230220 23:54:06.770"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:11.260" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230220 23:27:10.253" endtime="20230220 23:27:11.260"/>
+<msg timestamp="20230220 23:54:07.777" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230220 23:54:06.771" endtime="20230220 23:54:07.777"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:u_email</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:11.260" level="INFO">Typing text 'suchada1512@gmail.com' into text field 'id:u_email'.</msg>
-<status status="PASS" starttime="20230220 23:27:11.260" endtime="20230220 23:27:11.342"/>
+<msg timestamp="20230220 23:54:07.779" level="INFO">Typing text 'suchada1512@gmail.com' into text field 'id:u_email'.</msg>
+<status status="PASS" starttime="20230220 23:54:07.778" endtime="20230220 23:54:07.892"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:12.344" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230220 23:27:11.342" endtime="20230220 23:27:12.344"/>
+<msg timestamp="20230220 23:54:08.897" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230220 23:54:07.893" endtime="20230220 23:54:08.897"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:u_password</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:12.344" level="INFO">Typing text 'suchada' into text field 'id:u_password'.</msg>
-<status status="PASS" starttime="20230220 23:27:12.344" endtime="20230220 23:27:12.422"/>
+<msg timestamp="20230220 23:54:08.898" level="INFO">Typing text 'suchada' into text field 'id:u_password'.</msg>
+<status status="PASS" starttime="20230220 23:54:08.898" endtime="20230220 23:54:08.970"/>
 </kw>
 <kw name="Click to Login">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:14.431" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230220 23:27:12.423" endtime="20230220 23:27:14.431"/>
+<msg timestamp="20230220 23:54:10.974" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 23:54:08.971" endtime="20230220 23:54:10.974"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="loginBtn"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:14.431" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
-<status status="PASS" starttime="20230220 23:27:14.431" endtime="20230220 23:27:14.466"/>
+<msg timestamp="20230220 23:54:10.974" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
+<status status="PASS" starttime="20230220 23:54:10.974" endtime="20230220 23:54:11.012"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:12.423" endtime="20230220 23:27:14.466"/>
+<status status="PASS" starttime="20230220 23:54:08.971" endtime="20230220 23:54:11.012"/>
 </kw>
 <kw name="Click Dropdown Icon">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:16.478" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230220 23:27:14.467" endtime="20230220 23:27:16.478"/>
+<msg timestamp="20230220 23:54:13.016" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 23:54:11.014" endtime="20230220 23:54:13.016"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/a/table/tbody/tr/td[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:16.478" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/a/table/tbody/tr/td[1]'.</msg>
-<status status="PASS" starttime="20230220 23:27:16.478" endtime="20230220 23:27:16.530"/>
+<msg timestamp="20230220 23:54:13.016" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/a/table/tbody/tr/td[1]'.</msg>
+<status status="PASS" starttime="20230220 23:54:13.016" endtime="20230220 23:54:13.083"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:14.467" endtime="20230220 23:27:16.530"/>
+<status status="PASS" starttime="20230220 23:54:11.012" endtime="20230220 23:54:13.083"/>
 </kw>
 <kw name="Click View Profile">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:18.535" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230220 23:27:16.531" endtime="20230220 23:27:18.535"/>
+<msg timestamp="20230220 23:54:15.089" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 23:54:13.085" endtime="20230220 23:54:15.089"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/div/a[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:18.536" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/div/a[1]'.</msg>
-<status status="PASS" starttime="20230220 23:27:18.536" endtime="20230220 23:27:18.583"/>
+<msg timestamp="20230220 23:54:15.089" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/div/a[1]'.</msg>
+<status status="PASS" starttime="20230220 23:54:15.089" endtime="20230220 23:54:15.121"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:16.530" endtime="20230220 23:27:18.584"/>
+<status status="PASS" starttime="20230220 23:54:13.084" endtime="20230220 23:54:15.121"/>
 </kw>
 <kw name="Close Browser Page">
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:21.595" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230220 23:27:18.586" endtime="20230220 23:27:21.595"/>
+<msg timestamp="20230220 23:54:18.136" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230220 23:54:15.123" endtime="20230220 23:54:18.136"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230220 23:27:21.595" endtime="20230220 23:27:23.728"/>
+<status status="PASS" starttime="20230220 23:54:18.136" endtime="20230220 23:54:20.346"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:18.585" endtime="20230220 23:27:23.728"/>
+<status status="PASS" starttime="20230220 23:54:15.122" endtime="20230220 23:54:20.346"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:05.826" endtime="20230220 23:27:23.728"/>
+<status status="PASS" starttime="20230220 23:54:02.409" endtime="20230220 23:54:20.347"/>
 </test>
 <test id="s1-t2" name="View Profile Employee fail because click outside view profile" line="49">
 <kw name="Open file Excel">
 <kw name="Open Excel" library="ExcelRobot">
 <arg>C:\\xampp\\htdocs\\automateTestTeam0\\employee1\\test_viewProfile\\test_data.xlsx</arg>
 <doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
-<msg timestamp="20230220 23:27:23.734" level="INFO">Opening file at C:\xampp\htdocs\automateTestTeam0\employee1\test_viewProfile\test_data.xlsx</msg>
-<status status="PASS" starttime="20230220 23:27:23.733" endtime="20230220 23:27:23.738"/>
+<msg timestamp="20230220 23:54:20.350" level="INFO">Opening file at C:\xampp\htdocs\automateTestTeam0\employee1\test_viewProfile\test_data.xlsx</msg>
+<status status="PASS" starttime="20230220 23:54:20.350" endtime="20230220 23:54:20.353"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:23.731" endtime="20230220 23:27:23.739"/>
+<status status="PASS" starttime="20230220 23:54:20.349" endtime="20230220 23:54:20.353"/>
 </kw>
 <kw name="Read Cell Data" library="ExcelRobot">
 <var>${Username}</var>
@@ -160,8 +160,8 @@
 <arg>0</arg>
 <arg>1</arg>
 <doc>Uses the column and row to return the data from that cell.</doc>
-<msg timestamp="20230220 23:27:23.740" level="INFO">${Username} = suchada1512@gmail.com</msg>
-<status status="PASS" starttime="20230220 23:27:23.740" endtime="20230220 23:27:23.740"/>
+<msg timestamp="20230220 23:54:20.353" level="INFO">${Username} = suchada1512@gmail.com</msg>
+<status status="PASS" starttime="20230220 23:54:20.353" endtime="20230220 23:54:20.353"/>
 </kw>
 <kw name="Read Cell Data" library="ExcelRobot">
 <var>${Password}</var>
@@ -169,125 +169,125 @@
 <arg>1</arg>
 <arg>1</arg>
 <doc>Uses the column and row to return the data from that cell.</doc>
-<msg timestamp="20230220 23:27:23.743" level="INFO">${Password} = suchada</msg>
-<status status="PASS" starttime="20230220 23:27:23.742" endtime="20230220 23:27:23.743"/>
+<msg timestamp="20230220 23:54:20.354" level="INFO">${Password} = suchada</msg>
+<status status="PASS" starttime="20230220 23:54:20.353" endtime="20230220 23:54:20.354"/>
 </kw>
 <kw name="Open Project Monitoring System">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230220 23:27:23.745" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
-<status status="PASS" starttime="20230220 23:27:23.744" endtime="20230220 23:27:26.435"/>
+<msg timestamp="20230220 23:54:20.354" level="INFO">Opening browser 'Google Chrome' to base url 'http://dekdee2.informatics.buu.ac.th:9080/team0/'.</msg>
+<status status="PASS" starttime="20230220 23:54:20.354" endtime="20230220 23:54:22.386"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230220 23:27:26.436" endtime="20230220 23:27:26.623"/>
+<status status="PASS" starttime="20230220 23:54:22.386" endtime="20230220 23:54:22.553"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:23.744" endtime="20230220 23:27:26.625"/>
+<status status="PASS" starttime="20230220 23:54:20.354" endtime="20230220 23:54:22.554"/>
 </kw>
 <kw name="Click Menu Login">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:28.640" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230220 23:27:26.626" endtime="20230220 23:27:28.640"/>
+<msg timestamp="20230220 23:54:24.559" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 23:54:22.555" endtime="20230220 23:54:24.559"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@class="nav-link waves-effect waves-dark profile-pic fs-5"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:28.641" level="INFO">Clicking element '//*[@class="nav-link waves-effect waves-dark profile-pic fs-5"]'.</msg>
-<status status="PASS" starttime="20230220 23:27:28.640" endtime="20230220 23:27:28.675"/>
+<msg timestamp="20230220 23:54:24.560" level="INFO">Clicking element '//*[@class="nav-link waves-effect waves-dark profile-pic fs-5"]'.</msg>
+<status status="PASS" starttime="20230220 23:54:24.559" endtime="20230220 23:54:24.593"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:26.625" endtime="20230220 23:27:28.675"/>
+<status status="PASS" starttime="20230220 23:54:22.555" endtime="20230220 23:54:24.594"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:29.678" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230220 23:27:28.675" endtime="20230220 23:27:29.678"/>
+<msg timestamp="20230220 23:54:25.610" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230220 23:54:24.594" endtime="20230220 23:54:25.610"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:u_email</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:29.679" level="INFO">Typing text 'suchada1512@gmail.com' into text field 'id:u_email'.</msg>
-<status status="PASS" starttime="20230220 23:27:29.678" endtime="20230220 23:27:29.764"/>
+<msg timestamp="20230220 23:54:25.610" level="INFO">Typing text 'suchada1512@gmail.com' into text field 'id:u_email'.</msg>
+<status status="PASS" starttime="20230220 23:54:25.610" endtime="20230220 23:54:25.687"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:30.766" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230220 23:27:29.764" endtime="20230220 23:27:30.766"/>
+<msg timestamp="20230220 23:54:26.691" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230220 23:54:25.687" endtime="20230220 23:54:26.691"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:u_password</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:30.766" level="INFO">Typing text 'suchada' into text field 'id:u_password'.</msg>
-<status status="PASS" starttime="20230220 23:27:30.766" endtime="20230220 23:27:30.860"/>
+<msg timestamp="20230220 23:54:26.692" level="INFO">Typing text 'suchada' into text field 'id:u_password'.</msg>
+<status status="PASS" starttime="20230220 23:54:26.691" endtime="20230220 23:54:26.763"/>
 </kw>
 <kw name="Click to Login">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:32.865" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230220 23:27:30.863" endtime="20230220 23:27:32.865"/>
+<msg timestamp="20230220 23:54:28.764" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 23:54:26.764" endtime="20230220 23:54:28.764"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="loginBtn"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:32.865" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
-<status status="PASS" starttime="20230220 23:27:32.865" endtime="20230220 23:27:32.900"/>
+<msg timestamp="20230220 23:54:28.764" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
+<status status="PASS" starttime="20230220 23:54:28.764" endtime="20230220 23:54:28.801"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:30.862" endtime="20230220 23:27:32.901"/>
+<status status="PASS" starttime="20230220 23:54:26.763" endtime="20230220 23:54:28.801"/>
 </kw>
 <kw name="Click Dropdown Icon">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:34.915" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230220 23:27:32.901" endtime="20230220 23:27:34.915"/>
+<msg timestamp="20230220 23:54:30.816" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 23:54:28.801" endtime="20230220 23:54:30.816"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/a/table/tbody/tr/td[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:34.915" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/a/table/tbody/tr/td[1]'.</msg>
-<status status="PASS" starttime="20230220 23:27:34.915" endtime="20230220 23:27:34.956"/>
+<msg timestamp="20230220 23:54:30.816" level="INFO">Clicking element '//*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/a/table/tbody/tr/td[1]'.</msg>
+<status status="PASS" starttime="20230220 23:54:30.816" endtime="20230220 23:54:30.857"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:32.901" endtime="20230220 23:27:34.957"/>
+<status status="PASS" starttime="20230220 23:54:28.801" endtime="20230220 23:54:30.857"/>
 </kw>
 <kw name="Click outside View Profile">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:36.968" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230220 23:27:34.957" endtime="20230220 23:27:36.968"/>
+<msg timestamp="20230220 23:54:32.868" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 23:54:30.858" endtime="20230220 23:54:32.868"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="main-wrapper"]/div/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230220 23:27:36.968" level="INFO">Clicking element '//*[@id="main-wrapper"]/div/div'.</msg>
-<status status="PASS" starttime="20230220 23:27:36.968" endtime="20230220 23:27:37.005"/>
+<msg timestamp="20230220 23:54:32.869" level="INFO">Clicking element '//*[@id="main-wrapper"]/div/div'.</msg>
+<status status="PASS" starttime="20230220 23:54:32.869" endtime="20230220 23:54:32.902"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:34.957" endtime="20230220 23:27:37.005"/>
+<status status="PASS" starttime="20230220 23:54:30.857" endtime="20230220 23:54:32.902"/>
 </kw>
 <kw name="Close Browser Page">
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230220 23:27:40.009" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230220 23:27:37.006" endtime="20230220 23:27:40.009"/>
+<msg timestamp="20230220 23:54:35.910" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230220 23:54:32.903" endtime="20230220 23:54:35.910"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230220 23:27:40.009" endtime="20230220 23:27:42.235"/>
+<status status="PASS" starttime="20230220 23:54:35.910" endtime="20230220 23:54:38.014"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:37.006" endtime="20230220 23:27:42.236"/>
+<status status="PASS" starttime="20230220 23:54:32.902" endtime="20230220 23:54:38.014"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:23.730" endtime="20230220 23:27:42.242"/>
+<status status="PASS" starttime="20230220 23:54:20.349" endtime="20230220 23:54:38.014"/>
 </test>
-<status status="PASS" starttime="20230220 23:27:05.366" endtime="20230220 23:27:42.243"/>
+<status status="PASS" starttime="20230220 23:54:01.765" endtime="20230220 23:54:38.017"/>
 </suite>
 <statistics>
 <total>

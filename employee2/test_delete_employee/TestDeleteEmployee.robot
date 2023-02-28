@@ -21,19 +21,20 @@ Click to Login
 Click Sidebar Resiponse Project
     sleep   2s
     Click Element   //*[@id="sidebarnav"]/li[2]/a/i
-    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[1]
-Click ManageProject
-    sleep   2s
-    Click Element    xpath = /html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/a
+    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li[2] 
 Click DeleteEmployee
     sleep   2s
+    Click Element  //*[@id="project13"]/td[2]
+    sleep  1s
+    Click Element  //*[@id="permission-tab"]
+    sleep  1s
     Click Element   //*[@id="del"]
 Click confirm
     sleep   2s
     Click Element   xpath=/html/body/div[7]/div/div[3]/button[1]
 Click cancle
     sleep   2s
-    Click Element   //*[@class="swal2-cancel swal2-styled"]
+    Click Element   xpath=/html/body/div[7]/div/div[3]/button[2]
 Close Browser Page
     sleep   3s
     Close Browser 
@@ -51,7 +52,6 @@ DeleteEmployee Success
     Input Text      id:u_password   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
-    Click ManageProject
     Click DeleteEmployee
     Click confirm
     sleep  1s
@@ -68,7 +68,7 @@ DeleteEmployee Failed
     Input Text      id:u_password   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
-    Click ManageProject
     Click DeleteEmployee
     Click cancle
+    sleep  1s
     Close Browser
