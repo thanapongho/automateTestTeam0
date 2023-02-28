@@ -25,19 +25,21 @@ Click Sidebar Settings
 Click Announce system
     sleep  2s
     Click Element   xpath=/html/body/div[2]/aside/div/nav/ul/li[4]/ul/li[4]/a
-Click delete button
+Click hide toggle
     sleep  2s
-    Click Element   //*[@id="del"]
-Click comfirm button
+    Click Element   //*[@class="form-check-input"]
+Click hide toggle double click
     sleep  2s
-    Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
+    Click Element   //*[@class="form-check-input"]
+    sleep  2s
+    Click Element   //*[@class="form-check-input"]
 Close Browser Page
     sleep  3s
     Close Browser 
 
 
 *** Test Cases ***
-Delete Announce Success
+Hide Announce Success
     Open Excel    ${CURDIR}//test_data.xlsx
     ${Username}=    Read Cell Data      Admin  0   1
     ${Password}=    Read Cell Data      Admin  1   1
@@ -50,6 +52,20 @@ Delete Announce Success
     Click to Login
     Click Sidebar Settings
     Click Announce system
-    Click delete button
-    Click comfirm button
+    Click hide toggle
+    Close Browser Page
+Hide Announce failed with double click toggle
+    Open Excel    ${CURDIR}//test_data.xlsx
+    ${Username}=    Read Cell Data      Admin  0   1
+    ${Password}=    Read Cell Data      Admin  1   1
+    Open Project Monitoring System
+    Click Menu Login
+    sleep  2s
+    Input Text      //*[@id="u_email"]      ${Username}
+    sleep  2s
+    Input Text      //*[@id="u_password"]   ${Password}
+    Click to Login
+    Click Sidebar Settings
+    Click Announce system
+    Click hide toggle double click
     Close Browser Page

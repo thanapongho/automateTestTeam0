@@ -25,19 +25,22 @@ Click Sidebar Settings
 Click Announce system
     sleep  2s
     Click Element   xpath=/html/body/div[2]/aside/div/nav/ul/li[4]/ul/li[4]/a
-Click delete button
+Click hide toggle
     sleep  2s
-    Click Element   //*[@id="del"]
-Click comfirm button
+    Click Element   //*[@class="form-check-input"]
+Click Show toggle
     sleep  2s
-    Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
+    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[5]/div/input
+Back to Home Page
+    sleep  2s
+    Click Element   //*[@id="main-wrapper"]/header/nav/div[1]
 Close Browser Page
     sleep  3s
     Close Browser 
 
 
 *** Test Cases ***
-Delete Announce Success
+Show Announce Success
     Open Excel    ${CURDIR}//test_data.xlsx
     ${Username}=    Read Cell Data      Admin  0   1
     ${Password}=    Read Cell Data      Admin  1   1
@@ -50,6 +53,7 @@ Delete Announce Success
     Click to Login
     Click Sidebar Settings
     Click Announce system
-    Click delete button
-    Click comfirm button
+    Click hide toggle
+    Click Show toggle
+    Back to Home Page
     Close Browser Page
