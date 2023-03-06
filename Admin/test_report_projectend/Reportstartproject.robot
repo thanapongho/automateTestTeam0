@@ -8,7 +8,7 @@ ${BROWSER}  Google Chrome
 
 **Keywords**
 Open file Excel
-    Open Excel    ${CURDIR}\\test_data.xlsx
+    Open Excel    ${CURDIR}//test_data.xlsx
 Open Project Monitoring System
     open Browser  ${URL}  ${BROWSER}  
     Maximize Browser Window
@@ -34,7 +34,9 @@ Close Browser Page
 # Jiradat 
 Select End Project Success
     Open file Excel
+    sleep  2s
     ${Username}=    Read Cell Data      Admin  0   1
+    sleep  2s
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
