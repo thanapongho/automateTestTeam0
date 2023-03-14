@@ -30,6 +30,11 @@ Click Add Announce
     Click Element   //*[@id="addBtn"]
     sleep  2s
     Input Text      //*[@id="an_text"]      เธอบอกเขาแสนดี โทษทีฉันแสนแสบ
+Input Start announce date & End announce date
+    sleep  2s
+    Input Text      //*[@id="an_begindate"]     14-03-2023
+    sleep  2s
+    Input Text      //*[@id="an_enddate"]       14-04-2023
 Click Save button
     sleep  2s
     Click Element   xpath=/html/body/div[3]/div/div/div[3]/button[1]
@@ -53,5 +58,6 @@ Add Announce Success
     Click Sidebar Settings
     Click Announce system
     Click Add Announce
+    Input Start announce date & End announce date
     Click Save button
     Close Browser Page

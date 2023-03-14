@@ -38,7 +38,10 @@ Input Last Name Employee
     Input Text    //*[@id="u_lastname"]    เรืองศรี  
 Input Email
     sleep   2s
-    Input Text    //*[@id="u_email"]    sorn.lungling@gmail.com
+    Input Text    //*[@id="u_email"]    somsak.ru@gmail.com
+Input Email has already used in System
+    sleep  2s
+    Input Text  //*[@id="u_email"]    sorn.lungling@gmail.com
 Input Phone
     sleep   2s
     Input Text    //*[@id="u_tel"]    0944628921
@@ -48,50 +51,16 @@ Choose Rigth
 Choose Employee
     sleep   2s
     Click Element   xpath=/html/body/div[3]/div/div/div[2]/div/div/div/form/div/div/div[3]/select/option[4]
+Input Position
+    sleep  2s
+    Input Text      //*[@id="u_position"]   BA
 Click Accept Add Employee
     sleep   2s
     Click Element   xpath=/html/body/div[3]/div/div/div[3]/button[1]
-Click Accept Add Employee Fail
-    sleep   2s
-    Click Element   xpath=/html/body/div[3]/div/div/div[3]/button[1]
-Click Accept Employee 
-    sleep   4s
-    Click Element   xpath=/html/body/div[7]/div/div[3]/button[1]
-Delete Project
-    sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[6]/button[3]
-Accept Delete Project
-    sleep   2s
-    Click Element   xpath=/html/body/div[5]/div/div[3]/button[1]
-UnAccept Delete Project
-    sleep   2s
-    Click Element   xpath=/html/body/div[5]/div/div[3]/button[2]
-Click Manage Activities
-    sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/a
-Click Cancle Project
-    sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/button[3]
-Click Accept Cancle Project
-    sleep   2s 
-    Click Element   xpath=/html/body/div[5]/div/div[3]/button[1]
-Click Cancle Accept Project
-    sleep   2s 
-    Click Element   xpath=/html/body/div[5]/div/div[3]/button[2]
-Click Manage Activities In Project
-    sleep   2s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[6]/a
-Click Add Employee In Project
-    sleep   2s
-    Click Element   //*[@id="listDiv"]/div/div/div/div/button[4]
-Click Add Employee Double Click
-    sleep   2s
-    Click Element   xpath=/html/body/div[4]/div/div/div[2]/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[4]/button
-Click Close Add Employee
-    sleep   2s
-    Click Element   xpath=/html/body/div[4]/div/div/div[3]/button
+
+
 Close Browser Page
-    sleep   3s
+    sleep   5s
     Close Browser 
 **Test Cases**
 Add Employee Success
@@ -100,7 +69,9 @@ Add Employee Success
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    sleep  2s
     Input Text      //*[@id="u_email"]      ${Username}
+    sleep  2s
     Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Click Sidebar Settings
@@ -112,28 +83,29 @@ Add Employee Success
     Input Phone
     Choose Rigth
     Choose Employee
+    Input Position
     Click Accept Add Employee
     Close Browser Page
-
-Add Employee Fail
+Add Employee Failed with this e-mail has already been used
     Open file Excel
     ${Username}=    Read Cell Data      Admin  0   1
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
-    Input Text      id:u_email      ${Username}
-    Input Text      id:u_password   ${Password}
+    sleep  2s
+    Input Text      //*[@id="u_email"]      ${Username}
+    sleep  2s
+    Input Text      //*[@id="u_password"]   ${Password}
     Click to Login
     Click Sidebar Settings
     Click List Employee
     Click Add Employee
     Input Name Employee
     Input Last Name Employee
-    Input Email
+    Input Email has already used in System
     Input Phone
     Choose Rigth
     Choose Employee
-    Click Accept Add Employee Fail
-    Close Browser Page    
-   
-
+    Input Position
+    Click Accept Add Employee
+    Close Browser Page

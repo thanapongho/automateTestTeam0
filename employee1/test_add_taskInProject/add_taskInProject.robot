@@ -20,16 +20,14 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Sidebar Resiponse Project
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/a
+    Click Element   //*[@id="sidebarnav"]/li[2]/a 
 Click Project Responsibility
     sleep   2s
-    Click Element   //*[@id="sidebarnav"]/li[2]/ul/li/a
+    Click Element   xpath=/html/body/div[2]/aside/div/nav/ul/li[2]/ul/li[2]/a
 Click Manage Task Project
     sleep   2s
-    Click Element   //*[@class="btn btn-tertiary btn-sm"]
-Click Add Project Task
-    sleep   2s
-    Click Element   //*[@id="addBtn"]
+    Click Element   //*[@id="project17"]/td[2]
+
 Click Dropdown Project Task
     sleep   2s
     Click Element   //*[@id="t_tl_id"]
@@ -51,7 +49,7 @@ Click Save Button
     sleep   2s
     Click Element   //*[@class="btn btn-success"]
 Close Browser Page
-    sleep   5s
+    sleep   3s
     Close Browser 
 
 **Test Cases**

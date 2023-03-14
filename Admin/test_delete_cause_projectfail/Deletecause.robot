@@ -24,7 +24,7 @@ Click Sidebar Resiponse Project
     Click Element   //*[@id="sidebarnav"]/li[4]/ul/li[3]/a
 Delete Cause Of Project Fail
     sleep   1s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[5]/button[2]
+    Click Element   //*[@id="del"]
     sleep  1s
     Click Element   xpath=/html/body/div[6]/div/div[3]/button[1]
 Close Browser Page

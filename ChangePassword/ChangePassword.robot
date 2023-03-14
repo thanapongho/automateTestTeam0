@@ -20,12 +20,10 @@ Click to Login
     Click Element   //*[@id="loginBtn"]
 Click Dropdown Icon
     sleep   2s
-    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/a
+    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/a
 Click Change Password
     sleep   2s
-    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[2]/li/div/a[2]  
-
-
+    Click Element   //*[@id="main-wrapper"]/header/nav/div[2]/ul[3]/li/div/a[2] 
 Close Browser Page
     sleep   3s
     Close Browser 
@@ -45,13 +43,11 @@ View Profile Employee Success
     Click Dropdown Icon
     Click Change Password
     sleep   2s
-    Input Text      id:curPwd       ${Password}
+    Input Text      //*[@id="curPwd"]       ${Password}
     sleep   1s
-    Input Text      id:pwd          suchada*s
+    Input Text      //*[@id="pwd"]          suchada*s
     sleep   1s
-    Input Text      id:cfPwd        suchada*s
+    Input Text      //*[@id="cfPwd"]        suchada*s
     sleep   1s
     Click Element   //*[@id="mainModalFooter"]/button[1]
-    sleep   1s
-    Click Element   //*[@class="swal2-confirm swal2-styled"]
     Close Browser Page

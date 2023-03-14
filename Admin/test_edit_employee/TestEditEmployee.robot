@@ -94,6 +94,7 @@ Edit Employee Success
     Click Menu Login
     sleep  2s
     Input Text      id:u_email      ${Username}
+    sleep  2s
     Input Text      id:u_password   ${Password}
     Click to Login
     Click Sidebar Resiponse Project
@@ -106,7 +107,9 @@ Edit Wrong Because Click Cancle button
     ${Password}=    Read Cell Data      Admin  1   1
     Open Project Monitoring System
     Click Menu Login
+    sleep  2s
     Input Text      id:u_email      ${Username}
+    sleep  2s
     Input Text      id:u_password   ${Password}
     Click to Login
     Click Sidebar Resiponse Project

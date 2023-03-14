@@ -23,8 +23,10 @@ Click Sidebar Resiponse Project
     Click Element   //*[@id="sidebarnav"]/li[4]/a/i
     Click Element   //*[@id="sidebarnav"]/li[4]/ul/li[3]/a
 Export Cause Of Project Fail Excel
-    sleep   1s
+    sleep  2s
     Click Element   //*[@id="DataTables_Table_0_wrapper"]/div[1]/button[1]
+    sleep  3s
+    Click Elemnt    //*[@id="DataTables_Table_0_wrapper"]/div[1]/button[2]
 Close Browser Page
     sleep   3s
     Close Browser
@@ -44,6 +46,3 @@ Export Cause Success
     Click Sidebar Resiponse Project
     Export Cause Of Project Fail Excel
     Close Browser Page 
-    
-    
-

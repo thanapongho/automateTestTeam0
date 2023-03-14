@@ -24,7 +24,7 @@ Click Sidebar Resiponse Project
     Click Element   //*[@id="sidebarnav"]/li[4]/ul/li[3]/a
 Edit Cause Of Project Fail
     sleep   1s
-    Click Element   xpath=/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[5]/button[1]
+    Click Element   //*[@id="edit"]
     sleep  1s
     Input Text     //*[@id="cl_name"]     เกินงบในการดำเนินการโครงการ
     Click Element   //*[@id="mainModalFooter"]/button[1]
@@ -47,6 +47,3 @@ Edit Cause Success
     Click Sidebar Resiponse Project
     Edit Cause Of Project Fail
     Close Browser Page 
-    
-    
-
